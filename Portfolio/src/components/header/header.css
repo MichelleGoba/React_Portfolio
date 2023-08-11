@@ -4,8 +4,30 @@
     box-sizing: border-box;
 }
 
+/* Header section */
 .logo{
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     border-radius: 50px;
+    background:#F24E1E;
+    padding: 0; 
+    
 }
+
+.Navbar{
+    background-color: #FED2C8;
+    max-width: 100%; 
+}
+
+.name{
+    padding-left: 10px;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.name span{
+    font-family: 'Clicker Script', cursive;
+    font-weight: 600;
+    color:#F24E1E ;
+}
+
