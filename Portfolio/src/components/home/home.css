@@ -1,0 +1,21 @@
+.home-section{
+    background-color: red;
+    padding-top: 150px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.content {
+    background-color: green;
+  }
+  
+  .home-image{
+    height: 350px;
+    width: 400px;
+    
+  }
+  .image{
+    padding-left: 150px;
+  }
