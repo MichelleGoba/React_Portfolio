@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import myLogo from './logo.png';
+import myLogo from '../../images/logo.png'
 
 const Header = () => {
   return (
@@ -28,9 +28,6 @@ const Header = () => {
         </Navbar.Collapse>
       </Container>
     </Navbar>
-
-
-
   )
 }
 
