@@ -1,0 +1,12 @@
+.col-md-3{
+ display: flex; 
+ place-items: center;
+
+}
+.col-md-3 span{
+ color: black;
+ font-size: 25px;
+ padding: 20px;
+
+}
+

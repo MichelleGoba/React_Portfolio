@@ -17,10 +17,28 @@
 .my-profession span{
     color: #F24E1E;
 }
+ .social-icons{
+    height: 30px;
+ }
+ .social-icons a{
+    color: #F24E1E;
+    padding: 20px;
+    font-size: 50px;
+ }
+
+.social-icons:hover{
+   
+}
+
+.home-button{
+    padding-top: 70px;
+}
+
 .btn{
     border-radius: 20px;
     color: white;
     background-color:#F24E1E;
+    
   }
   
 .image{

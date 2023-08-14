@@ -2,9 +2,7 @@ import React from 'react';
 import "./footer.css";
 import Container from 'react-bootstrap/Container';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faFacebook} from '@fortawesome/free-brands-svg-icons';
-import {faInstagram} from '@fortawesome/free-brands-svg-icons';
-import {faLinkedin} from '@fortawesome/free-brands-svg-icons';
+import {faFacebook, faGithub, faInstagram, faLinkedin} from '@fortawesome/free-brands-svg-icons';
 import myLogo from '../../images/logo.png';
 
 
@@ -21,11 +19,40 @@ const Footer = () => {
             {/* <hr className="clearfix w-100 d-md-none pb-0"/> */}
 
             <div className="col-md-3 mb-md-0 mb-3">
-              <a href='#'>
+
+            <div className='facebook'>
+                <a href='#'>
+                <div className='tooltip'>Facebook</div>
+                <span><FontAwesomeIcon icon={faFacebook}/></span>
+                </a>
+              </div>
+
+              <div className='instagram'>
+                <a href='#'>
+                <div className='tooltip'>Instagram</div>
+                <span><FontAwesomeIcon icon={faInstagram}/></span>
+                </a>
+              </div>
+
+              <div className='linkedin'>
+                <a href='#'>
+                <div className='tooltip'>Linkedin</div>
+                <span><FontAwesomeIcon icon={faLinkedin}/></span>
+                </a>
+              </div>
+              
+              <div className='github'>
+                <a href='#'>
+                <div className='tooltip'>Github</div>
+                <span><FontAwesomeIcon icon={faGithub}/></span>
+                </a>
+              </div>
+
+              {/* <a href='#'>
                 <FontAwesomeIcon icon={faFacebook}/>
                 <FontAwesomeIcon icon={faInstagram}/>
                 <FontAwesomeIcon icon={faLinkedin}/>
-              </a>
+              </a> */}
             </div>
 
             <div className="col-md-3 mb-md-0 mb-3">
