@@ -1,21 +1,56 @@
 .home-section{
-    background-color: red;
     padding-top: 150px;
+
 }
 
 .row{
     display: flex;
     justify-content: space-between;
 }
-.content {
-    background-color: green;
+
+.greeting span{
+    color: #F24E1E;
+    font-family: 'Clicker Script', cursive;
+    font-weight: 600;
+}
+
+.my-profession span{
+    color: #F24E1E;
+}
+.btn{
+    border-radius: 20px;
+    color: white;
+    background-color:#F24E1E;
   }
   
-  .home-image{
+.image{
     height: 350px;
     width: 400px;
     
   }
-  .image{
+.home-image{
     padding-left: 150px;
   }
+
+.home-image::after{
+    content: '';
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-bottom: 10px solid #F24E1E;
+    border-right: 10px solid #F24E1E;
+    right: 90px;
+    bottom: -50px;
+  }
+
+  .home-image::before{
+    content: '';
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-top: 10px solid #F24E1E;
+    border-left: 10px solid #F24E1E;
+    left: 140px;
+    top: -40px;
+  }
+  
