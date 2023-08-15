@@ -17,8 +17,14 @@ const Home = () => {
       <Row>
         <Col lg={6} md={4} className='content'>
           <h1 className='greeting'>Hi! Im <span>M</span>ichelle</h1>
-          <h3 className='my-profession'>Im a <span className='typing'>Junior Software Developer</span></h3>
+          <h3 className='my-profession'>Im a <span className='typing' id='profession'>Junior Software Developer</span></h3> 
           <p>I am a Junior Software Developer from Cape Town who is learning how to navigate the development processes. My area of competence includes designing websites, applications, and many more...</p>
+
+           {/* Home buton start */}
+           <div className='home-button'>
+          <a href='#about'className='btn'>More about Me</a>
+          </div>
+          {/* Home buton end */}
 
           {/* Social icons start*/}
           <div className='social-icons'>
@@ -34,14 +40,9 @@ const Home = () => {
               <FontAwesomeIcon icon={faLinkedin}/>
             </a>
           </div>
-
           {/* Social icons end */}
 
-          {/* Home buton start */}
-          <div className='home-button'>
-          <a href='#about'className='btn'>More about Me</a>
-          </div>
-          {/* Home buton end */}
+         
         </Col>
         
         {/* Home image start */}
