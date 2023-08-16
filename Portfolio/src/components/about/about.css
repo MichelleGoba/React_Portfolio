@@ -8,6 +8,30 @@
     padding-top: 80px;
 
  }
+ .about-title{
+    font-weight: 700;
+ }
+ /* .about-title::before{
+    content: '';
+    height:4px;
+    width: 50px;
+    background-color: orangered;
+    position: absolute;
+    top: 100%;
+    left: 0;
+ }
+
+.about-title::after{
+    content: '';
+    height: 4px;
+    width: 25px;
+    background-color: crimson;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 8px;
+} */
+
 .about-image{
     padding-top: 80px;
 }
@@ -20,3 +44,18 @@
     padding-left: 50px;
     padding-top: 30px;
 }
+.personal-info{
+    padding-top: 10px;
+}
+.abt-buttons{
+    padding-top: 10px;
+    display: flex;
+    
+}
+.hire-btn{
+    padding-left: 20px;
+}
+
+
+
+

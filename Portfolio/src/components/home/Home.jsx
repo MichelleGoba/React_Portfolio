@@ -22,8 +22,8 @@ const Home = () => {
 
            {/* Home buton start */}
            <div className='home-button'>
-          <a href='#about'className='btn'>More about Me</a>
-          </div>
+              <a href='#about'className='btn'>More about Me</a>
+            </div>
           {/* Home buton end */}
 
           {/* Social icons start*/}

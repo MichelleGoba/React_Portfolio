@@ -7,12 +7,16 @@
 .home-section{
     padding-top: 150px;
    
-
 }
 
 .row{
     display: flex;
     justify-content: space-between;
+}
+
+/* Contect start */
+.content p{
+    text-align: justify;
 }
 
 .greeting span{
@@ -39,24 +43,15 @@
 .social-icons a{
     color: #F24E1E;
     font-size: 30px;
-    margin: 0 10px;
-    
+    margin: 0 10px;  
     
 }
- /* .social-icons a{
-    color: #F24E1E;
-    padding: 20px;
-    font-size: 50px;
-    
- } */
-
-
-
 
 .btn{
     border-radius: 20px;
     color: white;
     background-color:#F24E1E;
+    width: 160px;
     
   }
   
