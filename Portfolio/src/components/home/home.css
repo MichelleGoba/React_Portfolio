@@ -6,6 +6,7 @@
 
 .home-section{
     padding-top: 150px;
+   
 
 }
 
@@ -64,9 +65,10 @@
     width: 400px;
     
   }
-.home-image{
-    padding-left: 150px;
-  }
+ .home-image{
+    height: 352px;
+    width: 480px;
+  } 
 
 /* .home-image::after{
     content: '';

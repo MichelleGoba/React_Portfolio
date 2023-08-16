@@ -13,9 +13,9 @@ import {faLinkedin} from '@fortawesome/free-brands-svg-icons';
 
 const Home = () => {
   return (
-    <Container className='home-section'>
+    <Container className='container-fluid home-section'>
       <Row>
-        <Col lg={6} md={4} className='content'>
+        <Col sm={12} md={8} lg={6} className='content'>
           <h1 className='greeting'>Hi! Im <span>M</span>ichelle</h1>
           <h3 className='my-profession'>Im a <span className='typing' id='profession'>Junior Software Developer</span></h3> 
           <p>I am a Junior Software Developer from Cape Town who is learning how to navigate the development processes. My area of competence includes designing websites, applications, and many more...</p>
@@ -46,12 +46,12 @@ const Home = () => {
         </Col>
         
         {/* Home image start */}
-        <Col xs={6} md={6} className='home-image'>
-          <img src= {myLogo} className='image' />
-        </Col>
+        <Col sm={12} md={8} lg={6} className='home-image'>
+          <img src= {myLogo} className='image mx-auto'/> 
+        </Col> 
         {/* Home image end */}
       </Row>
-    </Container> 
+    </Container>
 
   )
 }

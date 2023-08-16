@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', 'Sans-serif';
 }
  .about-section{
     padding-top: 80px;
@@ -10,7 +11,10 @@
 .about-image{
     padding-top: 80px;
 }
- 
+
+.image{
+    width: 380px;
+}
 #about-image{
     height: 400px; 
     padding-left: 50px;
