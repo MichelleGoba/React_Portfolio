@@ -8,7 +8,7 @@ import Row from 'react-bootstrap/Row';
 const About = () => {
   return (
     <Container className='container-fluid  about-section'>
-      <h2 className='about-title'>About Me</h2>
+      <h2 className='title'>About Me</h2>
       <Row> 
         {/*about image start*/}
         <Col xs={6} md={6} w-100 className='about-image'>
@@ -42,10 +42,13 @@ const About = () => {
             </div>
             </div>      
         </Col>
-
-        
       </Row> 
     </Container> 
+
+    // Skills section start
+    
+    // Skills section end
+
 
   )
 }
