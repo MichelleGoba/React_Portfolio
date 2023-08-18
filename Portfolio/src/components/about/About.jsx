@@ -7,7 +7,7 @@ import Row from 'react-bootstrap/Row';
 
 const About = () => {
   return (
-    <Container className='container-fluid  about-section'>
+    <Container className='container-fluid  about-section' id='about'>
       <h2 className='title'>About Me</h2>
       <Row> 
         {/*about image start*/}

@@ -13,7 +13,7 @@ import {faLinkedin} from '@fortawesome/free-brands-svg-icons';
 
 const Home = () => {
   return (
-    <Container className='container-fluid home-section'>
+    <Container className='container-fluid home-section' id='home'>
       <Row>
         <Col sm={12} md={8} lg={6} className='content'>
           <h1 className='greeting'>Hi! Im <span>M</span>ichelle</h1>
