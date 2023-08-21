@@ -4,6 +4,8 @@
     box-sizing: border-box;
     font-family: 'Poppins', 'Sans-serif';
 }
+
+/* About Me start */
  .about-section{
     padding-top: 80px;
 
@@ -55,6 +57,8 @@
 .hire-btn{
     padding-left: 20px;
 }
+/* About Me end */
+
 
 /* Skills section start */
 
@@ -62,12 +66,22 @@
     padding-top: 70px;
 }
 
+
 .skills-content p{
     padding-top: 30px;
 }
 .skills-images{
     padding: 0 80px;
 }
+.skills-content, .skills-images {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skills-content {
+    max-width: 800px;
+  }  
+
 .div-img1{
     display: flex;
 }
@@ -112,7 +126,31 @@
     padding: 50px;
 }
 
+ 
+
+  @media (max-width: 768px) {
+    .skills-content, .skills-images {
+      flex-direction: column;
+      width: 340px;
+    }
+  }
+  
 /* skills section end */
+
+/* education and experience */
+
+.accomplishments{
+    display: flex;
+    padding-top: 50px;
+}
+/* .education .education-section,
+.education .experience-section
+{
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 30px;
+} */
+
 
 
 
