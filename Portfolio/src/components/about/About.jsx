@@ -4,6 +4,10 @@ import aboutImage from '../../images/abt-img.png';
 import "./about.css";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
+import image1 from '../../images/skills1.jpg';
+import image2 from '../../images/skills2.jpg';
+import image3 from '../../images/skills3.jpg';
+import image4 from '../../images/skills4.jpg';
 
 const About = () => {
   return (
@@ -43,11 +47,33 @@ const About = () => {
             </div>      
         </Col>
       </Row> 
+
+      <Container className='container-fluid skills' id='skills'>
+        <h3>Skills</h3>
+        <Row>
+          {/* skills section start */}
+          <Col lg={6} md={4} h-100 w-100 className='skills-content'>
+            <p>
+            My skills include designing and developing features and functionalities of websites and applications using Balsamiq, Figma, HTML, CSS, JavaScript, Node JS, React JS, and Python.
+            </p>
+          </Col>
+
+          <Col lg={6} md={4} h-100 w-100 className='skills-images'>
+            <img src={image4} className='image4'/>
+            <img src={image2} className='image2'/>
+            <img src={image3} className='image3'/>
+            <img src={image1} className='image1'/>
+          
+          </Col>
+
+
+          {/* skills section end */}
+
+        </Row>
+      </Container>
     </Container> 
 
-    // Skills section start
-    
-    // Skills section end
+   
 
 
   )

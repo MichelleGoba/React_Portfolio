@@ -17,9 +17,9 @@ const Header = () => {
           <Nav className="ms-auto">
             <Nav.Link href="#home">Home</Nav.Link>
             <NavDropdown href ="about" title="About" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1" id='about'>About Me</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.1" id='skills'>Skills</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2" id='education'>
+              <NavDropdown.Item href="#about">About Me</NavDropdown.Item>
+              <NavDropdown.Item href="#skills">Skills</NavDropdown.Item>
+              <NavDropdown.Item href="#education">
                 Education
               </NavDropdown.Item>
             </NavDropdown>
