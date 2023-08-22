@@ -15,47 +15,25 @@ const Portfolio = () => {
         <div className='portfolio'>
           
           <div className='projects'>
-            <div>
-            <Card style={{ width: '20rem' }}>
-              <Card.Img variant="top" src={image1} />
-              <Card.Body>
-                <Card.Title>Project 1</Card.Title>
-                <Card.Text>
-                  
-                </Card.Text>
-                <Button variant="primary">Go to project</Button>
-              </Card.Body>
-            </Card>
-            </div>
+            <p>Project 1</p>
+            <img src= {image1}/>
+            <button>More</button>
+           
           </div>
           <div className='projects'>
-            <div>
-            <Card style={{ width: '20rem' }}>
-              <Card.Img variant="top" src={image1} />
-              <Card.Body>
-                <Card.Title>Project 2</Card.Title>
-                <Card.Text>
-                  
-                </Card.Text>
-                <Button variant="primary">Go to project</Button>
-              </Card.Body>
-            </Card>
-            </div>
+            <p>Project 1</p>
+            <img src= {image1}/>
+            <button>More</button>
+           
           </div>
           <div className='projects'>
-            <div>
-            <Card style={{ width: '20rem' }}>
-              <Card.Img variant="top" src={image1} />
-              <Card.Body>
-                <Card.Title>Project 3</Card.Title>
-                <Card.Text>
-                
-                </Card.Text>
-                <Button variant="primary">Go to project</Button>
-              </Card.Body>
-            </Card>
-            </div>
+            <p>Project 1</p>
+            <img src= {image1}/>
+            <button>More</button>
+           
           </div>
+          
+          
 
 
         </div>
