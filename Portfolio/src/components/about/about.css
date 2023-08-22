@@ -10,6 +10,7 @@
     padding-top: 80px;
 
  }
+
  .title{
     font-weight: 700;
  }
@@ -128,26 +129,27 @@
 
  
 
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     .skills-content, .skills-images {
       flex-direction: column;
       width: 340px;
     }
-  }
+  } */
   
 /* skills section end */
 
 /* education and experience */
 
 .accomplishments{
-    display: flex;
-    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr; */
 }
 
-.education-section .timeline-box{
+/* .education-section .timeline-box{
     flex: 0 0 100%;
     max-width: 100%;
-} 
+}  */
 
 
 
