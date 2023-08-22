@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import Col from 'react-bootstrap/Col';
 import aboutImage from '../../images/abt-img.png';
 import "./about.css";
@@ -89,7 +89,7 @@ const About = () => {
             <div className="education-section">
                     <h3 className="title">Education</h3>
                     <div className="row">
-                      <div className="timeline-box padd-15">
+                      <div className="timeline-box">
                         <div className="timeline shadow-dark">
                           {/* <!-- ===== timeline item ===== --> */}
                           <div className="timeline-item">
@@ -139,7 +139,7 @@ const About = () => {
                   <div className='experience-section'>
                     <h3 className="title">Experience</h3>
                     <div className="row">
-                      <div className="timeline-box padd-15">
+                      <div className="timeline-box">
                         <div className="timeline shadow-dark">
                           {/* <!-- ===== timeline item ===== --> */}
                           <div className="timeline-item">
@@ -149,7 +149,7 @@ const About = () => {
                             </h3>
                             <h4 className="timeline-title">UVU Africa</h4>
                             <h5>Software Development Intern</h5>
-                            <p className="timeline-text">I'm responsible for using HTML, CSS, and JavaScript to construct, develop, and maintain websites. I put into practice the front-end logic that controls how web applications' visual
+                            <p className="timeline-text">Im responsible for using HTML, CSS, and JavaScript to construct, develop, and maintain websites. I put into practice the front-end logic that controls how web applications visual
                               components behave. I am also in charge of coding, designing, and deploying development
                               initiatives on the server and client side. I work with developers to design algorithms and
                               flowcharts.
@@ -163,7 +163,7 @@ const About = () => {
                                 </h3>
                                 <h4 className="timeline-title">Steam House Engineering</h4>
                                 <h5>Safety Officer</h5>
-                                <p className="timeline-text">In this position, was in charge of assuring the company's total compliance with safety, health, and environmental laws, regulations, policies, procedures, and legislation.</p>
+                                <p className="timeline-text">In this position, was in charge of assuring the companys total compliance with safety, health, and environmental laws, regulations, policies, procedures, and legislation.</p>
                               </div>
                                   {/* <!-- ===== timeline item ===== -->
                                     <!-- ===== timeline item ===== --> */}
