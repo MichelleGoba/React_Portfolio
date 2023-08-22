@@ -1,25 +1,28 @@
 import React from 'react';
 import "./portfolio.css";
+import { Container } from 'react-bootstrap';
+
+import image1 from '../../images/skills1.jpg';
 
 const Portfolio = () => {
   return (
-    <div className='portfolio-container'>
-      <div>
-        <p>hi</p>
-      </div>
-      <div>
-      <p>hi</p>
+    <Container className='container-fluid  about-section' id='portfolio'>
+      <div className='portfolio'>
+        <div className='projects'> 
+          <img src= {image1} className='image1'/>
+        </div>
+
+        <div className='projects'>
+          <img src= {image1} className='image2'/> 
+        </div>
+        <div className='projects'>
+        <img src= {image1} className='image3'/> 
+        </div>
       </div>
       
-      <div>
-      <p>hi</p>
-      </div>
-      
-    </div>
-    // <div className="album py-5 bg-body-tertiary">
      
 
-  // </div>
+    </Container>
   )
 }
 
