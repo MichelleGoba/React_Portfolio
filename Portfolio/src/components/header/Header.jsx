@@ -9,7 +9,7 @@ import myLogo from '../../images/logo.png'
 const Header = () => {
   return (
     <Navbar expand="xl" className="Navbar">
-      <Container>
+      <Container className='nav'>
         <img src={myLogo} className='logo'/> 
         <Navbar.Brand href="#home" className='name'><span>M</span>ichelle</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
