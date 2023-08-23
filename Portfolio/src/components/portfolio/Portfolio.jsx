@@ -1,7 +1,7 @@
 import React from 'react';
 import "./portfolio.css";
 import { Container } from 'react-bootstrap';
-import image1 from '../../images/skills1.jpg';
+
 import project1 from '../../images/MZAMOMTSHA.png';
 import project2 from '../../images/project2.png';
 import project3 from '../../images/project3.png';
