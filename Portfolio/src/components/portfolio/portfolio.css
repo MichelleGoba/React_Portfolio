@@ -62,8 +62,8 @@ margin: 20px 0px;
   @media (max-width:991px)
   {
       
-      .portfolio .portfolio-item,.showcase,
-      .service .service-item
+      .portfolio .portfolio-item
+      
       {
           flex: 0 0 50%;
           max-width: 100%;

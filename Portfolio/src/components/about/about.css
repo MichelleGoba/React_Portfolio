@@ -127,30 +127,102 @@
     padding: 50px;
 }
 
- 
 
-  /* @media (max-width: 768px) {
-    .skills-content, .skills-images {
-      flex-direction: column;
-      width: 340px;
-    }
-  } */
+  .accomplishments {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    max-width: 100%;
+  }
   
-/* skills section end */
+  .education-section, .experience-section {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-bottom: 20px;
+  }
 
-/* education and experience */
+  @media (max-width: 768px) {
+    .accomplishments{
+      flex-direction: column;
+      max-width: 100%;
+    }
+  }
 
-.accomplishments{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    /* grid-template-rows: 1fr 1fr; */
+  @media (max-width: 576px){
+    .education-section, .experience-section{
+        flex: 0 0 100%;;
+        max-width: 100%;
+    }
+  }
+  .row .timeline
+  {
+      background-color: peachpuff;
+      padding: 30px 15px;
+      border-radius: 10px;
+      width: 100%;
+     
+  }
+
+
+  /* dots and line position */
+  .row .timeline .timeline-item
+  {
+      position: relative;
+      padding-left: 37px;
+      padding-bottom: 30px;
+  }
+
+   .row .timeline .timeline-item:last-child
+{
+    padding-bottom: 0;
+} 
+.row .timeline .timeline-item::before
+{
+    content: '';
+    width: 1px;
+    position: absolute;
+    height: 100%;
+    left: 7px;
+    top: 0;
+    background-color: orangered;
+}
+.row .timeline .circle-dot
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: orangered;
 }
 
-/* .education-section .timeline-box{
-    flex: 0 0 100%;
-    max-width: 100%;
-}  */
+.row .timeline .timeline-date
+{
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: rgb(24, 23, 23);
+}
+.row .timeline .timeline-date .fa 
+{
+    margin-right: 5px;
+    font-size: 20px;
+}
 
+.row .timeline .timeline-title
+{
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    color: rgb(24, 23, 23);
+}
 
-
-
+.row .timeline .timeline-text
+{
+    line-height: 25px;
+    font-size: 16px;
+    text-align: justify;
+    color: rgb(43, 42, 42);
+}
