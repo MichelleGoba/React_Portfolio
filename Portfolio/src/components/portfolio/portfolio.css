@@ -15,7 +15,7 @@ margin: 20px 0px;
     display: flex;
     flex-direction: column;
     width: 30%;
-    /* height: 400px; */
+    /* height: 400px;  */
     padding: 10px;
     margin: 10px;
     border-radius: 10px;
@@ -27,29 +27,11 @@ margin: 20px 0px;
     z-index: 1;
     
 }
+.p-img{
+  height: 250px;
+}
 
-/* .card{
-    .card {
-        display: flex;
-        flex-direction: column;
-        width: 30%;
-        padding: 10px;
-        margin: 10px;
-        border-radius: 10px;
-        background-color: rgb(85, 63, 38);
-        color: white;
-        box-shadow: -10px 10px 5px -5px rgba(79, 75, 75, 0.89);
-        -webkit-box-shadow: -10px 10px 5px -5px rgba(79, 75, 75, 0.89);
-        -moz-box-shadow: -10px 10px 5px -5px rgba(79, 75, 75, 0.89);
-        z-index: 1;
-        
-      }
-} */
 
-/* .card {
-    width: 100%;
-    max-width: 500px;
-  }  */
   @media (max-width:991px)
   {
       
