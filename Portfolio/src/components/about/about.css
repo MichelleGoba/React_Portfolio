@@ -136,7 +136,7 @@
   .accomplishments {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 25px;
     max-width: 100%;
   }
   
@@ -145,11 +145,13 @@
     max-width: 50%;
     margin-bottom: 20px;
   }
-
+.row{
+    padding-top: 30px;
+}
 
   .row .timeline
   {
-      background-color: peachpuff;
+      background-color: #FED2C8;
       padding: 30px 15px;
       border-radius: 10px;
       width: 100%;

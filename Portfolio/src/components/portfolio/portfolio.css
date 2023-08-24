@@ -28,7 +28,7 @@ margin: 20px 0px;
     padding: 10px;
     margin: 10px;
     border-radius: 10px;
-    background-color: rgb(85, 63, 38);
+    background-color: rgb(141, 103, 59);
     color: white;
     box-shadow: -10px 10px 5px -5px rgba(79, 75, 75, 0.89);
     -webkit-box-shadow: -10px 10px 5px -5px rgba(79, 75, 75, 0.89);
@@ -71,7 +71,7 @@ margin: 20px 0px;
      
   }
   @media (max-width: 768px) {
-    .projects {
+    .projects, .p-img {
       width: 100%;
       max-width: 300px;
     }
@@ -81,7 +81,7 @@ margin: 20px 0px;
   @media (max-width:767px)
 {
     
-    .portfolio .portfolio-item
+    .portfolio .portfolio-item, .p-img
    
     {
         flex: 0 0 100%;
@@ -108,7 +108,7 @@ margin: 20px 0px;
   @media (max-width:450px){
   
 
-    .projects {
+    .projects, .p-img {
       display: grid;
       flex-direction: column;
       width: 100%;
