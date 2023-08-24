@@ -1,16 +1,17 @@
-/* .page-footer{
-    background-color: red;
+/* whole footer start */
+.page-footer{
+    background-color: rgb(228, 162, 162);
+    max-width: 100%;  
     
 }
+/* whole footer end */
 
-#copyright{
-    padding-right: 200px;
-}
-
+/* icons start */
 #icons{
     display: flex;
     padding: 20px;
 }
+
 .col-md-4 span{
     position: relative;
     display: inline-flex;
@@ -19,57 +20,56 @@
     width: 50px;
 
 
-}  */
+}  
 
-/* .col-md- span{
-    /* position: relative; */
-    /* display: block;
+.col-md-4 span{
+    position: relative; 
+    display: block;
     color: black;
     font-size: 20px;
     width: 50px;
-    /* background:rgb(53, 52, 52); */
-    /* line-height: 60px;
+    /* background:rgb(53, 52, 52);  */
+    line-height: 60px;
     border-radius: 50%;
     margin: 0 15px;
-    cursor: pointer; */
-    /* transition: .5s; */
-/* } */ */ */
+    cursor: pointer; 
+    transition: .5s; 
+} 
 
-/* .col-md-3 span::before{
+.col-md-4 span::before{
     position: absolute;
     content: '';
     top: 0;
     left: 0;
-    /* background: orangered; */
-    /* height: 100%;
+    background: orangered; 
+    height: 100%;
     width: 100%;
     border-radius: 50%;
     z-index: -1;
     transform: scale(0.9);
-    transition: .5s; */
+    transition: .5s; 
 
-/* } */
-/*  */
-/* .col-md-3 span:hover::before{
+} 
+
+.col-md-4 span:hover::before{
     filter: blur(3px);
     transform: scale(1.2);
     box-shadow: 0 0 15px orangered;
 }
-.col-md-3 span:hover{
+.col-md-4 span:hover{
     color: #ffa502;
-    box-shadow: 0 0 15px orangered;
     text-shadow: 0 0 15px orangered;
-} */ */
-/* 
-.col-md-3 .icon{
+} 
+ 
+.col-md-4 .icon{
    cursor: pointer;
 
 }
-.col-md-3 .icon .tooltip{
-   color: b;
+/* icons end */
 
-}
 
-/* #logo{
+/* logo start */
+#logo{
     padding-left: 300px;
 }
+/* logo end */
