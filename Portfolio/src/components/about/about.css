@@ -126,8 +126,13 @@
 .div-img2 .fourthImg{
     padding: 50px;
 }
+/* skills section end */
 
+/* education section start */
 
+#education{
+    padding-top: 40px;
+}
   .accomplishments {
     display: flex;
     flex-direction: row;
@@ -141,19 +146,7 @@
     margin-bottom: 20px;
   }
 
-  @media (max-width: 768px) {
-    .accomplishments{
-      flex-direction: column;
-      max-width: 100%;
-    }
-  }
 
-  @media (max-width: 576px){
-    .education-section, .experience-section{
-        flex: 0 0 100%;;
-        max-width: 100%;
-    }
-  }
   .row .timeline
   {
       background-color: peachpuff;
@@ -226,3 +219,17 @@
     text-align: justify;
     color: rgb(43, 42, 42);
 }
+
+@media (max-width: 768px) {
+    .accomplishments{
+      flex-direction: column;
+      max-width: 100%;
+    }
+  }
+
+  @media (max-width: 576px){
+    .education-section, .experience-section{
+        flex: 0 0 100%;;
+        max-width: 100%;
+    }
+  }
