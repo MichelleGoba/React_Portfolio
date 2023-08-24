@@ -8,7 +8,7 @@ import myLogo from '../../images/logo.png'
 
 const Header = () => {
   return (
-    <Navbar expand="xl" className="Navbar">
+    <Navbar expand="xl" className="Navbar sticky-top">
       <Container className='nav'>
         <img src={myLogo} className='logo'/> 
         <Navbar.Brand href="#home" className='name'><span>M</span>ichelle</Navbar.Brand>

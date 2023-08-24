@@ -5,6 +5,12 @@
 }
 
 /* Header section */
+
+.Navbar{
+    background-color: #FED2C8;
+    max-width: 100%;  
+}
+
 .logo{
     width: 50px;
     height: 50px;
@@ -14,10 +20,6 @@
     
 }
 
-.Navbar{
-    background-color: #FED2C8;
-    max-width: 100%;  
-}
 
 .name{
     padding-left: 10px;

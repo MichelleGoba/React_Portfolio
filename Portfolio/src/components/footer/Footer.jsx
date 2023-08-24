@@ -9,7 +9,7 @@ import myLogo from '../../images/logo.png';
 const Footer = () => {
   return (
     <Container>
-      {/* <footer className="page-footer font-small pt-2">
+      <footer className="page-footer font-small pt-2">
         <div className="container-fluid text-md-left">
           <div className="row">
             <div className="col-md-4 mt-md-0 mt-3" id='copyright'>
@@ -53,7 +53,7 @@ const Footer = () => {
         </div>
     </div>
 
-      </footer> */}
+      </footer> 
     </Container>
   )
 }
