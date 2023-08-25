@@ -36,12 +36,19 @@
     padding-bottom: 20px;
 }
 
-
+.cont-btn{
+    color: white;
+    background-color: rgb(240, 132, 93);
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+}
  .form-text{
     width: 100%;
     height: 50px;
     border-radius: 25px;
-    background: #aca6a53f;
+    background: white;
     border: 1px solid var(--bg-black-50);
     padding: 10px 25px;
     font-size: 16px;

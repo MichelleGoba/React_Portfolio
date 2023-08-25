@@ -10,8 +10,8 @@ const Footer = () => {
   return (
     
       <footer className="page-footer font-small pt-2">
-        <div className="container-fluid text-md-left">
-          <div className="row">
+        <div className="container-fluid text-md-left" >
+          <div className="row" id="footer">
             <div className="col-md-4 mt-md-0 mt-3" id='copyright'>
               <p className="footer-copyright py-3">© 2023 Copyright: Michelle</p>
             </div>

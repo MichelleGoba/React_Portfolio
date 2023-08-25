@@ -7,10 +7,15 @@
     max-width: 100%;  
     
 }
+
+#footer{
+    background-color: #FED2C8; 
+}
 /* whole footer end */
 
 #copyright{
     padding-right: 40px;
+    background-color: #FED2C8;
 }
 /* icons start */
 #icons{
@@ -18,9 +23,25 @@
     padding: 20px;
     display: flex;
     justify-content: space-evenly;
+    background-color: #FED2C8;
   
 }
 
+.icon{
+    background-color: #FED2C8;
+}
+.icon a{
+    background-color: #FED2C8;
+}
+
+.row{
+    padding: 0;
+   
+}
+
+.footer-copyright{
+    background-color: #FED2C8;
+}
 
 .col-md-4 span{
     position: relative; 
@@ -32,6 +53,8 @@
     margin: 0 15px;
     cursor: pointer; 
     transition: .5s; 
+    background-color: #FED2C8;
+    
 } 
 
 .col-md-4 span::before{
@@ -46,6 +69,7 @@
     z-index: -1;
     transform: scale(0.9);
     transition: .5s; 
+    background-color: #FED2C8;
 } 
 
 .col-md-4 span:hover::before{
@@ -60,6 +84,7 @@
  
 .col-md-4 .icon{
    cursor: pointer;
+   
 
 }
 /* icons end */
@@ -68,6 +93,8 @@
 /* logo start */
 #logo{
     padding-left: 300px;
+    background-color: #FED2C8;
+    
 }
 /* logo end */
 

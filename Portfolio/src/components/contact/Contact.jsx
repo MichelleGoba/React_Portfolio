@@ -42,9 +42,9 @@ const Contact = () => {
           </div>
 
           <div className='group'>
-            <div className='input'>
-              <buton className='btn'>Send Email</buton>
-            </div>
+          
+              <button className='cont-btn'>Send Email</button>
+
           </div>
 
 
