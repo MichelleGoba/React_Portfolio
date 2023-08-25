@@ -5,7 +5,7 @@
     font-family: 'Poppins', 'Sans-serif';
 }
 
-/* About Me start */
+/* About Me section start */
  .about-section{
     padding-top: 80px;
 
@@ -38,9 +38,7 @@
 .about-image{
     padding-top: 80px;
 }
-/* .content{
-    background-color: #FBE9E5;
-} */
+
 
 .image{
     width: 380px;
@@ -61,7 +59,8 @@
 .hire-btn{
     padding-left: 20px;
 }
-/* About Me end */
+/* About Me section end */
+
 
 
 /* Skills section start */
@@ -69,7 +68,6 @@
 .skills-title{
     padding-top: 70px;
 }
-
 
 .skills-content p{
     padding-top: 30px;
@@ -130,7 +128,8 @@
 .div-img2 .fourthImg{
     padding: 50px;
 }
-/* skills section end */
+/*skills section end */
+
 
 /* education section start */
 
@@ -174,7 +173,8 @@
 #item{
     background-color: white;
 }
-  /* dots and line position */
+
+  /* education and experience box - dots and line position */
   .row .timeline .timeline-item
   {
       position: relative;
@@ -206,6 +206,13 @@
     border-radius: 50%;
     background-color: orangered;
 }
+.row .timeline .timeline-date .fa 
+{
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+  /* education and experience box - dots and line position */
 
 .row .timeline .timeline-date
 {
@@ -214,11 +221,7 @@
     margin-bottom: 12px;
     color: rgb(24, 23, 23);
 }
-.row .timeline .timeline-date .fa 
-{
-    margin-right: 5px;
-    font-size: 20px;
-}
+
 
 .row .timeline .timeline-title
 {
@@ -286,6 +289,9 @@
     background-color: white;
 }
 
+
+
+/* media quiries */
 @media (max-width: 768px) {
     .accomplishments{
       flex-direction: column;
