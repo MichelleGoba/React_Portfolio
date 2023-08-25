@@ -1,6 +1,6 @@
-import React from 'react';
+
 import "./footer.css";
-import Container from 'react-bootstrap/Container';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faFacebook, faGithub, faInstagram, faLinkedin} from '@fortawesome/free-brands-svg-icons';
 import myLogo from '../../images/logo.png';
@@ -47,7 +47,7 @@ const Footer = () => {
             </div>
 
             <div className='col-md-4 mb-md-0 mb-3' id='logo'>
-              <img src={myLogo} className='logo'/>
+             <a href='#home'><img src={myLogo} className='logo'/></a> 
             </div>
         </div>
     </div>
