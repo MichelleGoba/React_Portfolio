@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import "./portfolio.css";
 import { Container } from 'react-bootstrap';
 
@@ -36,15 +36,8 @@ const Portfolio = () => {
           </div>
           
           
-
-
         </div>
          
-         
-           
-    
-      
-     
 
     </Container>
   )
