@@ -90,9 +90,9 @@ const About = () => {
                     <h3 className="title">Education</h3>
                     <div className="row">
                       <div className="timeline-box">
-                        <div className="timeline shadow-dark">
+                        <div className="timeline shadow-dark" id='timeline'>
                           {/* <!-- ===== timeline item ===== --> */}
-                          <div className="timeline-item">
+                          {/* <div className="timeline-item">
                             <div className="circle-dot"></div>
                             <h3 className="timeline-date">
                               <i className="fa fa-calendar"></i> 2023 - Current
@@ -100,7 +100,7 @@ const About = () => {
                             <h4 className="timeline-title">Udemy</h4>
                             <h5>The Complete 2023 Web Development Bootcamp</h5>
                             <p className="timeline-text">In this course I am learning to code and become a full-stack web developer.</p>
-                          </div>
+                          </div> */}
                           {/* <!-- ===== timeline item ===== --> */}
                           <div className="timeline-item">
                             <div className="circle-dot"></div>

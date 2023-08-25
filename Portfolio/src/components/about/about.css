@@ -151,14 +151,16 @@
 
   .row .timeline
   {
-      background-color: #FED2C8;
+      background-color: white;
       padding: 30px 15px;
       border-radius: 10px;
       width: 100%;
      
   }
 
-
+#item{
+    background-color: white;
+}
   /* dots and line position */
   .row .timeline .timeline-item
   {

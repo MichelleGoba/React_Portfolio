@@ -19,6 +19,14 @@
     padding: 0; 
     
 }
+.nav, .ms-auto, .dropdown, .dropdown-menu{
+    background-color: #FED2C8;
+}
+#basic-navbar-nav, #basic-nav-dropdown{
+    background-color: #FED2C8; 
+}
+
+
 
 
 .name{
@@ -31,5 +39,6 @@
     font-family: 'Clicker Script', cursive;
     font-weight: 600;
     color:#F24E1E ;
+    background-color: #FED2C8;
 }
 
