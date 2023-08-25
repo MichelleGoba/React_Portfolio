@@ -18,6 +18,7 @@ const Footer = () => {
             <p className="footer-copyright py-3">© 2023 Copyright: Michelle</p>
           </div>
 
+          {/* icons div start */}
           <div className="col-md-4 mb-md-0 mb-3" id="icons">
             <div className="icon facebook">
               <a href="#">
@@ -52,12 +53,16 @@ const Footer = () => {
               </a>
             </div>
           </div>
+          {/* icons div end */}
 
+          {/* logo start */}
           <div className="col-md-4 mb-md-0 mb-3" id="logo">
             <a href="#home">
               <img src={myLogo} className="logo" />
             </a>
           </div>
+          {/* logo end */}
+          
         </div>
       </div>
     </footer>

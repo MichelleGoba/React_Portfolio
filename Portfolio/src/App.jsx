@@ -8,11 +8,12 @@ import About from './components/about/About';
 import Portfolio from './components/portfolio/Portfolio';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
+import { HouseLockFill } from 'react-bootstrap-icons';
 
 function App() {
 
   return (
-    <div>
+    <div >
       <Header/>
       <Home/>
       <About/>
@@ -25,4 +26,4 @@ function App() {
   )   
 }
 
-export default App
+export default App;

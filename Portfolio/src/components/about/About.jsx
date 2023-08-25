@@ -20,6 +20,7 @@ const About = () => {
         </Col>
         {/* about image end */}
 
+        {/* content column start */}
         <Col lg={6} md={4} h-100 w-100 className="content">
           <h3 className="profession">Im a Junior Software Developer</h3>
           <p>
@@ -63,6 +64,7 @@ const About = () => {
             </div>
           </div>
         </Col>
+        {/* content column end */}
       </Row>
 
       <Container className="container-fluid skills" id="skills">

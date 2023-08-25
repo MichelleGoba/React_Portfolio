@@ -8,6 +8,8 @@ const Contact = () => {
       <h4>Send me an Email</h4>
       <h4>Im very responsive to messages</h4>
 
+      {/* Contact page form start */}
+      
       <div className="contact-container">
         <div className="contact-form">
           <div className="row">
@@ -62,6 +64,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      {/* Contact page form end */}
     </Container>
   );
 };
