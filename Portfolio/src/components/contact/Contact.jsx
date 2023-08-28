@@ -3,6 +3,8 @@ import { Container } from "react-bootstrap";
 import { useState } from "react";
 import contact1 from '../../images/contact1.png';
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -65,10 +67,12 @@ const Contact = () => {
     <div className="flip-box-back">
      
       <p>Im very responsive to messages</p>
+        <FontAwesomeIcon>{}</FontAwesomeIcon>
     </div>
   </div>
         
-        </div>
+        </div> 
+        
         
       </div>
     
