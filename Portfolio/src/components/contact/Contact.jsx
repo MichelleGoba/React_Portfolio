@@ -1,5 +1,6 @@
 import "./contact.css";
 import { Container } from "react-bootstrap";
+import contact-image from "../../images/contact1";
 
 const Contact = () => {
   return (
@@ -11,7 +12,11 @@ const Contact = () => {
       {/* Contact page form start */}
       
       <div className="contact-container">
-        <div className="contact-form">
+        <div className="contact-box">
+          <div className="left">
+            <img src= {contact-image}/>
+          </div>
+          <div className="right">
           <div className="row">
             <div className="group1">
               <div className="input">
@@ -62,7 +67,10 @@ const Contact = () => {
           <div className="group">
             <button className="cont-btn">Send Email</button>
           </div>
+
+          </div>
         </div>
+        
       </div>
       {/* Contact page form end */}
     </Container>
