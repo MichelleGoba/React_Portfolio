@@ -17,21 +17,21 @@ const Portfolio = () => {
           <p>Project 1</p>
           <img src={project1} className="p-img" />
           <a href="https://github.com/MichelleGoba/Mzamomtsha-Primary-School-Website">
-            <button>Go to Project</button>
+            <button className="btn">Go to Project</button>
           </a>
         </div>
         <div className="projects">
           <p>Project 2</p>
           <img src={project2} className="p-img" />
           <a href="https://github.com/MichelleGoba/Ndalo">
-            <button>Go to Project</button>
+            <button className="btn">Go to Project</button>
           </a>
         </div>
         <div className="projects">
           <p>Project 3</p>
           <img src={project3} className="p-img" />
           <a href="https://github.com/MichelleGoba/Ndalos_homepage">
-            <button>Go to Project</button>
+            <button className="btn">Go to Project</button>
           </a>
         </div>
       </div>

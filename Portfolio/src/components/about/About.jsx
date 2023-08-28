@@ -12,7 +12,7 @@ import image4 from "../../images/skills4.jpg";
 const About = () => {
   return (
     <Container className="container-fluid  about-section" id="about">
-      <h2 className="title">About Me</h2>
+      {/* <h2 className="title">About Me</h2> */}
       <Row>
         {/*about image start*/}
         <Col xs={6} md={6} w-100 className="about-image">

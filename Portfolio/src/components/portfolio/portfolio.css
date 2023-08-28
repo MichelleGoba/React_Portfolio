@@ -47,13 +47,6 @@ margin: 20px 0px;
   border-radius: 5px;
 }
 
-.projects button{
-  border-radius: 10px;
-  color: white;
-  padding: 5px;
-  background-color: rgb(231, 152, 123);
-}
-
 .projects a{
   padding-top: 10px;
   text-align: center;

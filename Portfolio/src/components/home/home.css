@@ -7,13 +7,12 @@
 
 .home-section{
     padding-top: 100px;
-    
-   
+ 
 }
 
 .row{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 /* Contect start */
@@ -56,16 +55,24 @@
     width: 160px;
     
   }
+
+  .image-container{
+
+    height:100%;
+    width: 500px; 
   
-.image{
-    height: 350px;
-    width: 400px;
+  } 
+  
+.home-img{
+    height: 440px;
+    width: 600px;
+    margin: 10px;
+    padding-left: 40px;
+
     
   }
- .home-image{
-    height: 352px;
-    width: 480px;
-  } 
+
+
 
 /* .home-image::after{
     content: '';

@@ -55,8 +55,8 @@ const Home = () => {
         </Col>
 
         {/* Home image start */}
-        <Col sm={12} md={8} lg={6} className="home-image">
-          <img src={myLogo} className="image mx-auto" />
+        <Col sm={12} md={8} lg={6} className="image-container">
+          <img src={myLogo} className="home-img mx-auto" />
         </Col>
         {/* Home image end */}
       </Row>

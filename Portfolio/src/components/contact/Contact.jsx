@@ -41,6 +41,7 @@ const Contact = () => {
   
         if(Object.keys(validationErrors).length === 0) {
           alert("Message submitted successfully")
+          setFormData(formData)
         }
     
     }
@@ -53,28 +54,33 @@ const Contact = () => {
     
       <div className="contact-container">
       <div className="contact-box">
+
       <div className="left">
-         <img src={contact1}/> 
+        <div className="flip-box">
+        <div className="flip-box-inner">
+
+    <div className="flip-box-front">
+    <img src={contact1} className="cnt-img"/> 
+    </div>
+    <div className="flip-box-back">
+     
+      <p>Im very responsive to messages</p>
+    </div>
+  </div>
+        
+        </div>
+        
       </div>
     
 
-    {/* //   <h3 className="title">Contact Me</h3>
-    //   <h4>Send me an Email</h4>
-    //   <h4>Im very responsive to messages</h4>
-
-    //   <div className="contact-container">
-    //     <div className="contact-box">
-    //       <div className="left"></div>
-    //       <div className="right"> */}
-
-         
+    
     <form onSubmit={handleSubmit} className="right">
     <div>
       
       <input
         type="text" className="field"
         name="name"
-        placeholder="name"
+        placeholder="Name"
         autoComplete="off"
         onChange={handleChange}
         
@@ -87,7 +93,7 @@ const Contact = () => {
       <input
         type="text" className="field"
         name="emial"
-        placeholder="email"
+        placeholder="Email"
         autoComplete="off" onChange={handleChange}
       ></input>
        {errors.email && <span>{errors.email}
@@ -98,7 +104,7 @@ const Contact = () => {
       <input
         type="text" className="field"
         name="subject"
-        placeholder="subject"
+        placeholder="Subject"
         autoComplete="off" onChange={handleChange}
       ></input>
        {errors.subject && <span>{errors.subject}
@@ -106,16 +112,16 @@ const Contact = () => {
     </div>
     <div>
       
-      <input
+      <textarea
         type="text" className="field"
         name="message"
-        placeholder="message"
+        placeholder="Message"
         autoComplete="off" onChange={handleChange}
-      ></input>
+      ></textarea>
        {errors.message && <span>{errors.message}
         </span>}
     </div>
-    <button type="submit">Submit</button>
+    <button type="submit" className="button">Submit</button>
   </form>
 
 
