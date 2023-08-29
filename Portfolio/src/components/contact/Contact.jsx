@@ -10,46 +10,52 @@ const Contact = () => {
     name: '',
     email: '',
     subject: '',
-    message: ''
+    message: '',
 
-  }
+  };
+
   const [formData, setFormData] = useState(initialFormData);
-  
-    const [errors, setErrors] = useState({})
-  
-    const handleChange = (e) => {
-    const {name,value} = e.target;
-    setFormData({
-      ...formData, [name] : value
-     })
-     }
-  
-     const handleSubmit = (e) => {
-      e.preventDefault()
-      const validationErrors = {}
-      if(!formData.name.trim()) {
-      validationErrors.name = "Name is required!"
-      }
-  
-      if(!formData.email.trim()) {
-        validationErrors.email = "Email is required!"
-         } else if(!/[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/i.test(formData.email)){
-        validationErrors.email= "Email is not valid!"
-        }
-  
-        if(!formData.message.trim()) {
-          validationErrors.message = "Message is required!"
-          }
-  
-        setErrors(validationErrors)
-  
-        if(Object.keys(validationErrors).length === 0) {
-          alert("Message submitted successfully")
-          setFormData(initialFormData);
-        }
-    
+  const [errors, setErrors] = useState({});
+
+  const handleChange = (e) => {
+    const {name, value} = e.target;
+    setFormData((prevData) => ({
+      ...prevData, [name] : value,
+    }));
+  };
+
+  const validateForm = () => {
+    const validationErrors = {};
+
+    if (!formData.name.trim()){
+      validationErrors.name = 'Name is required!';
     }
+    if(!formData.email.trim()){
+      validationErrors.email = 'Email is required!'
+    }else if(!/[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/i.test(formData.email)){
+      validationErrors.email= "Email is not valid!"
+    }
+    if(!formData.message.trim()) {
+      validationErrors.message = "Message is required!"
+      }
+
+      return validationErrors;
+
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const validationErrors = validateForm();
+    setErrors(validationErrors);
   
+
+    if(Object.keys(validationErrors).length === 0) {
+      alert("Message submitted successfully");
+      setFormData(initialFormData)
+    }
+    
+  };
+
   return (
     <Container className="container-fluid  contact-section" id="contact">
       <h3 className="title">Contact Me</h3>
@@ -74,12 +80,8 @@ const Contact = () => {
   </div>
         
         </div> 
-        
-        
       </div>
-    
-
-
+  
     <form onSubmit={handleSubmit} className="right">
     <div>
       
@@ -89,6 +91,7 @@ const Contact = () => {
         placeholder="Name"
         autoComplete="off"
         onChange={handleChange}
+        value={formData.name} 
         
       ></input>
       {errors.name && <span>{errors.name}
@@ -101,6 +104,7 @@ const Contact = () => {
         name="email"
         placeholder="example@gmail.com"
         autoComplete="off" onChange={handleChange}
+        value={formData.email} 
       ></input>
        {errors.email && <span>{errors.email}
         </span>}
@@ -112,6 +116,7 @@ const Contact = () => {
         name="subject"
         placeholder="Subject"
         autoComplete="off" onChange={handleChange}
+        value={formData.subject} 
       ></input>
        {errors.subject && <span>{errors.subject}
         </span>}
@@ -123,6 +128,7 @@ const Contact = () => {
         name="message"
         placeholder="Message"
         autoComplete="off" onChange={handleChange}
+        value={formData.message} 
       ></textarea>
        {errors.message && <span>{errors.message}
         </span>}
