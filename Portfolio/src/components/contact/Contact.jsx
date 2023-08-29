@@ -4,6 +4,7 @@ import { useState } from "react";
 import contact1 from '../../images/contact1.png';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const Contact = () => {
   const initialFormData ={
@@ -55,6 +56,10 @@ const Contact = () => {
     }
     
   };
+
+  // google reCapctcha function
+  const [googleCaptcha, setGoogleCaptcha] = useState(null)
+
 
   return (
     <Container className="container-fluid  contact-section" id="contact">
@@ -133,7 +138,11 @@ const Contact = () => {
        {errors.message && <span>{errors.message}
         </span>}
     </div>
-    <button type="submit" className="button">Submit</button>
+    <ReCAPTCHA
+    sitekey="6LfPb-MnAAAAAIcqD6LGgxKJ44a_Knfx-ZipmtSk"
+    onChange={(val) => setGoogleCaptcha(val)}
+    />
+    <button disabled={!googleCaptcha} type="submit" className="button">Submit</button>
   </form>
 
 </div>
