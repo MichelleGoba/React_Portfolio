@@ -25,8 +25,9 @@ const Home = () => {
       <Row>
         <Col sm={12} md={8} lg={6} className="content">
           <h1 className="greeting">
-            Hi! Im <span>M</span>ichelle
+            Hello! 
           </h1>
+          <h1 className="greeting">My name is <span>M</span>ichelle</h1>
           <h3 className="my-profession">
             Im a{" "}
             <span id="profession">{typrEffect}</span>

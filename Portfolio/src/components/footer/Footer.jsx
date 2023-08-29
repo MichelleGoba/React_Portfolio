@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import "./footer.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -7,9 +8,38 @@ import {
   faInstagram,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-import myLogo from "../../images/logo.png";
+
 
 const Footer = () => {
+  useEffect(() => {
+    // Function to wrap each character in a span tag
+    const wrapCharacters = () => {
+      const text = document.querySelector('.text');
+      text.innerHTML = text.textContent
+        .split('')
+        .map((char) => `<span>${char}</span>`)
+        .join('');
+    };
+
+    // Call the wrapCharacters function
+    wrapCharacters();
+
+    // Function to add the rotation animation
+    const rotateText = () => {
+      const spans = document.querySelectorAll('.text span');
+      let rotation = 0;
+      setInterval(() => {
+        rotation = (rotation + 1) % 360; // Increment rotation from 0 to 359 degrees
+        spans.forEach((span, index) => {
+          span.style.transform = `rotate(${index * 32 + rotation}deg)`;
+        });
+      }, 50); // Adjust the interval for the rotation speed
+    };
+
+    // Call the rotateText function
+    rotateText();
+  }, []);
+  
   return (
     <footer className="page-footer font-small pt-2">
       <div className="container-fluid text-md-left">
@@ -57,10 +87,20 @@ const Footer = () => {
 
           {/* logo start */}
           <div className="col-md-4 mb-md-0 mb-3" id="logo">
-            <a href="#home">
-              <img src={myLogo} className="logo" />
-            </a>
+          
+      <div className="circle">
+        <a href="home"><div className="footer-logo"></div></a>
+        <h3 className="text">Developer - </h3>
+      </div>
+    
           </div>
+          <div>
+          <div>
+            
+   
+    </div>
+      
+    </div>
           {/* logo end */}
           
         </div>

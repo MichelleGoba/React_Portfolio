@@ -8,6 +8,7 @@ import image1 from "../../images/skills1.jpg";
 import image2 from "../../images/skills2.jpg";
 import image3 from "../../images/skills3.jpg";
 import image4 from "../../images/skills4.jpg";
+import CV from "../../images/Michelle Goba_CV.pdf";
 
 const About = () => {
   return (
@@ -53,12 +54,12 @@ const About = () => {
 
           <div className="abt-buttons">
             <div className="download-btn">
-              <a href="#" className="btn" id="download-btn">
+              <a href={CV} className="btn" id="download-btn">
                 Download CV
               </a>
             </div>
             <div className="hire-btn">
-              <a href="#" className="btn" id="hire-btn">
+              <a href="#contact" className="btn" id="hire-btn">
                 Hire Me
               </a>
             </div>

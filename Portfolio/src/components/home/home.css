@@ -17,11 +17,19 @@
 .content p{
     text-align: justify;
 }
-
+.greeting{
+    font-size: 60px;
+}
 .greeting span{
+    font-size: 60px;
     color: #F24E1E;
     font-family: 'Clicker Script', cursive;
     font-weight: 600;
+}
+
+.my-profession{
+    font-size: 40px;
+    font-weight: 500;
 }
 
 #profession{
