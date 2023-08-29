@@ -6,12 +6,14 @@ import contact1 from '../../images/contact1.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
+  const initialFormData ={
     name: '',
     email: '',
     subject: '',
     message: ''
-    })
+
+  }
+  const [formData, setFormData] = useState(initialFormData);
   
     const [errors, setErrors] = useState({})
   
@@ -30,9 +32,9 @@ const Contact = () => {
       }
   
       if(!formData.email.trim()) {
-        validationErrors.email = "Email is required"
-        } else if(!/\S+@\S+\.\S+/.test(formData.email)){
-          validationErrors.email= "Email is not valid!"
+        validationErrors.email = "Email is required!"
+         } else if(!/[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/i.test(formData.email)){
+        validationErrors.email= "Email is not valid!"
         }
   
         if(!formData.message.trim()) {
@@ -43,7 +45,7 @@ const Contact = () => {
   
         if(Object.keys(validationErrors).length === 0) {
           alert("Message submitted successfully")
-          setFormData(formData)
+          setFormData(initialFormData);
         }
     
     }
@@ -77,7 +79,7 @@ const Contact = () => {
       </div>
     
 
-    
+
     <form onSubmit={handleSubmit} className="right">
     <div>
       
@@ -96,8 +98,8 @@ const Contact = () => {
       
       <input
         type="text" className="field"
-        name="emial"
-        placeholder="Email"
+        name="email"
+        placeholder="example@gmail.com"
         autoComplete="off" onChange={handleChange}
       ></input>
        {errors.email && <span>{errors.email}
@@ -127,15 +129,6 @@ const Contact = () => {
     </div>
     <button type="submit" className="button">Submit</button>
   </form>
-
-
-    
-              
-            
-      
-    {/* //       </div>
-    //     </div>
-    //   </div> */}
 
 </div>
 </div>
