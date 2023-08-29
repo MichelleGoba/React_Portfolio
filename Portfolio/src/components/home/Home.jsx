@@ -1,5 +1,6 @@
 // import React from 'react';
 import "./home.css";
+import {useTypewriter, Cursor} from 'react-simple-typewriter';
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import myLogo from "../../images/logo.png";
@@ -9,7 +10,16 @@ import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
+
+
 const Home = () => {
+  const [typrEffect] = useTypewriter({
+    words: ['Junior Software Developer', 'Designer'],
+    loop: {},
+    typeSpeed: 80,
+    delaySpeed: 40
+  })
+
   return (
     <Container className="container-fluid home-section" id="home">
       <Row>
@@ -19,9 +29,9 @@ const Home = () => {
           </h1>
           <h3 className="my-profession">
             Im a{" "}
-            <span className="typing" id="profession">
-              Junior Software Developer
-            </span>
+            <span id="profession">{typrEffect}</span>
+            
+            
           </h3>
           <p>
             I am a Junior Software Developer from Cape Town who is learning how

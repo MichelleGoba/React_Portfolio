@@ -77,6 +77,7 @@
     transform: scale(1.2);
     box-shadow: 0 0 15px orangered;
 }
+
 .col-md-4 span:hover{
     color: orangered;
     text-shadow: 0 0 15px orangered;
