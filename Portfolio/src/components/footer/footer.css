@@ -50,7 +50,6 @@
 
 .col-md-4 span{
     position: relative; 
-    display: block;
     color: black;
     font-size: 25px;
     width: 50px;
@@ -62,6 +61,19 @@
     
 } 
 
+#icons > div.icon.facebook > a > span > svg{
+    background-color: #FED2C8;
+
+}
+#icons > div.icon.instagram > a > span > svg{
+    background-color: #FED2C8;
+}
+#icons > div.icon.linkedin > a > span > svg{
+    background-color: #FED2C8;
+}
+#icons > div.icon.github > a > span > svg{
+    background-color: #FED2C8;
+}
 .col-md-4 span::before{
     position: absolute;
     content: '';

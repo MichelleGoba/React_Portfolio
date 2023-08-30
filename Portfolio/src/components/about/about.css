@@ -19,6 +19,10 @@
     font-weight: 600;
     color: orangered;
  }
+ .content p{
+    font-size: 18px;
+    line-height: 30px;
+ }
  /* .about-title::before{
     content: '';
     height:4px;
