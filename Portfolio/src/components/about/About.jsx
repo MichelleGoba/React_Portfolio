@@ -25,7 +25,7 @@ const About = () => {
         <Col lg={6} md={4} h-100 w-100 className="content">
           <h3 className="profession">Im a Junior Software Developer</h3>
           <p>
-            Im a self-driven and highly motivated individual. Exceptionally good
+            I am a self-driven and highly motivated individual. Exceptionally good
             at handling pressure, picking up new concepts quickly, and
             effectively communicating ideas. I have been progressively exposed
             to theoretical and practical knowledge in Software Development,

@@ -10,8 +10,6 @@ import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
-
-
 const Home = () => {
   const [typrEffect] = useTypewriter({
     words: ['Junior Software Developer', 'Designer'],
@@ -27,12 +25,11 @@ const Home = () => {
           <h1 className="greeting">
             Hello! 
           </h1>
+      
           <h1 className="greeting">My name is <span>M</span>ichelle</h1>
           <h3 className="my-profession">
             Im a{" "}
-            <span id="profession">{typrEffect}</span>
-            
-            
+            <span id="profession">{typrEffect}</span>  
           </h3>
           <p>
             I am a Junior Software Developer from Cape Town who is learning how
