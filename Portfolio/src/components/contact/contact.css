@@ -1,7 +1,15 @@
 #contact{
     padding-top: 40px;
 }
-
+.contact-container{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 100px;
+}
 .contact-section .title{
     padding-top: 30px;
 }
@@ -12,7 +20,7 @@
 }
 
 .contact-box{
-    width: 900px;
+  width: 900px;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	justify-content: center;
@@ -31,7 +39,7 @@
 	width: 100%;
 	border: 2px solid rgba(0, 0, 0, 0);
 	outline: none;
-	background-color: rgba(230, 230, 230, 0.6);
+	background-color: rgba(255, 255, 255, 0.993);
 	padding: 0.5rem 1rem;
 	font-size: 1.1rem;
 	margin-bottom: 22px;
@@ -45,10 +53,8 @@
     background-color: #fff;
 }
 
-.flip-box {
+.flipImg-box {
     background-color: transparent;
-    /* width: 200px;
-    height: 200px; */
     border: 1px solid #f1f1f1;
     perspective: 1000px;
   }
@@ -56,13 +62,13 @@
   .cnt-img{
     
     width: 370px;
-    padding-top: 50px;
+    padding-top: 90px;
     
   }
   textarea{
     height: 200px;
   }
-  .flip-box-inner {
+  .flipImg-box-inner {
     position: relative;
     width: 100%;
     height: 100%;
@@ -71,51 +77,41 @@
     transform-style: preserve-3d;
   }
   
-  .flip-box:hover .flip-box-inner {
+  .flipImg-box:hover .flipImg-box-inner {
     transform: rotateY(180deg);
   }
   
-  .flip-box-front, .flip-box-back {
+  .flipImg-box-front, .flipImg-box-back {
     position: absolute;
-    /* width: 100%;
-    height: 100%; */
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
   
-  .flip-box-front {
+  .flipImg-box-front {
     padding-left: 40px;
     padding-top: 20px;
 
   }
   
-  .flip-box-back {
+  .flipImg-box-back {
     display: flex;
-  justify-content: center;
-  align-items: center;
+   justify-content: center;
+   align-items: center;
     color: black;
     height: 400px;
-    transform: rotateY(180deg);
-    
+    transform: rotateY(180deg);  
   }
 
-  .flip-box-back p{
+  .flipImg-box-back p{
     padding-right: 5px;
     font-size: 50px;
-    padding-top: 10px;
+    padding-top: 30px;
   }
 
+  .flipImg-box-back .cnt-icon{
+    color: #F24E1E;
+  }
 
-
-.contact-container{
-	position: relative;
-	width: 100%;
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 20px 100px;
-}
 
 .button{
  padding: 5px;

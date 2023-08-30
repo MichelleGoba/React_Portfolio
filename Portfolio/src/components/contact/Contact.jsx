@@ -3,6 +3,8 @@ import { Container } from "react-bootstrap";
 import { useState } from "react";
 import contact1 from '../../images/contact1.png';
 import ReCAPTCHA from "react-google-recaptcha";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFaceSmile } from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
   const initialFormData ={
@@ -68,16 +70,14 @@ const Contact = () => {
       <div className="contact-box">
 
       <div className="left">
-        <div className="flip-box">
-        <div className="flip-box-inner">
+        <div className="flipImg-box">
+        <div className="flipImg-box-inner">
 
-    <div className="flip-box-front">
+    <div className="flipImg-box-front">
     <img src={contact1} className="cnt-img"/> 
     </div>
-    <div className="flip-box-back">
-     
-      <p>Im very responsive to messages</p>
- 
+    <div className="flipImg-box-back">    
+      <p>Im very responsive to messages <br/> <FontAwesomeIcon icon={faFaceSmile } className="cnt-icon"/></p>
     </div>
   </div>
         

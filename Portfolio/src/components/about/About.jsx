@@ -73,33 +73,32 @@ const About = () => {
         <Row className="skills-row">
           <Col xs={6} md={6} className="skills-content ">
             <p>
+              I am a dynamic, quick thinking creative professional with the skills to take a web design from the initial information architecture phase all the way through to front-end web development. <br/>
+
               My skills include designing and developing features and
               functionalities of websites and applications using Balsamiq,
-              Figma, HTML, CSS, JavaScript, Node JS, React JS, and Python.
+              Figma, HTML, CSS, JavaScript, Node JS, React JS, and Python. <br/>
+
+              I have experience coordinating with other developers, learning quickly, multitasking, meeting deadlines, and communicating promptly and clearly. 
             </p>
-            {/* <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, perferendis at. Harum assumenda sint commodi, sit fugiat amet odio, officiis facilis voluptas quam pariatur eius quasi blanditiis voluptatem quod at.
-          </p>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio minus et quod, rerum veritatis at, aliquid excepturi asperiores harum quisquam sed animi beatae deleniti exercitationem doloremque eum. Quaerat, veritatis corrupti?
-          </p> */}
+  
           </Col>
           <Col lg={6} md={4} w-100 className="skills-images">
             <div className="div-img1">
               <div className="firstImg">
-                <img src={image4} className="image4" />
+                <img src={image2} className="image4" />
               </div>
               <div className="secondImg">
-                <img src={image2} className="image2" />
+                <img src={image4} className="image2" />
               </div>
             </div>
 
             <div className="div-img2">
               <div className="thirdImg">
-                <img src={image3} className="image3" />
+                <img src={image1} className="image3" />
               </div>
               <div className="fourthImg">
-                <img src={image1} className="image1" />
+                <img src={image3} className="image1" />
               </div>
             </div>
           </Col>

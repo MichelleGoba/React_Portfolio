@@ -67,6 +67,8 @@
 
 .skills-title{
     padding-top: 70px;
+    font-size: 35px;
+    font-weight: 600;
 }
 
 .skills-content p{
@@ -84,6 +86,12 @@
   .skills-content {
     max-width: 800px;
   }  
+
+  .skills-content p{
+    font-size: 18px;
+    text-align: justify;
+    line-height: 35px;
+  }
 
 .div-img1{
     display: flex;

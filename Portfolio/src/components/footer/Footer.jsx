@@ -31,9 +31,9 @@ const Footer = () => {
       setInterval(() => {
         rotation = (rotation + 1) % 360; // Increment rotation from 0 to 359 degrees
         spans.forEach((span, index) => {
-          span.style.transform = `rotate(${index * 32 + rotation}deg)`;
+          span.style.transform = `rotate(${index * 33 + rotation}deg)`; // How close are the rotating words to each other
         });
-      }, 50); // Adjust the interval for the rotation speed
+      }, 100); // Adjust the interval for the rotation speed, with 100 rotation does not return to 0 anticlockwise, it rotates clockwise 
     };
 
     // Call the rotateText function
@@ -90,7 +90,7 @@ const Footer = () => {
           
       <div className="circle">
         <a href="home"><div className="footer-logo"></div></a>
-        <h3 className="text">Developer - </h3>
+        <h3 className="text">Developer- </h3>
       </div>
     
           </div>
