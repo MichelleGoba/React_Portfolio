@@ -5,8 +5,7 @@ import { Container } from "react-bootstrap";
 import { useState } from "react";
 import contact1 from "../../images/contact1.png";
 import ReCAPTCHA from "react-google-recaptcha";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFaceSmile } from "@fortawesome/free-solid-svg-icons";
+
 
 
 
@@ -101,7 +100,7 @@ const Contact = () => {
                 <div className="flipImg-box-back">
                   <p>
                     Im very responsive to messages <br />{" "}
-                    <FontAwesomeIcon icon={faFaceSmile} className="cnt-icon" />
+                    <span>😊</span>
                   </p>
                 </div>
               </div>

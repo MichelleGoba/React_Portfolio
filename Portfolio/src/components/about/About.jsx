@@ -16,13 +16,13 @@ const About = () => {
       {/* <h2 className="title">About Me</h2> */}
       <Row>
         {/*about image start*/}
-        <Col xs={6} md={6} w-100 className="about-image">
-          <img src={aboutImage} className="image fluid image" />
+        <Col xs={12} md={6} w-100 className="about-image">
+          <img src={aboutImage} className="img-fluid" />
         </Col>
         {/* about image end */}
 
         {/* content column start */}
-        <Col lg={6} md={4} h-100 w-100 className="content">
+        <Col xs={12} md={6} h-100 w-100 className="content">
           <h3 className="profession">Im a Junior Software Developer</h3>
           <p>
             I am a self-driven and highly motivated individual. Exceptionally good
@@ -71,7 +71,7 @@ const About = () => {
       <Container className="container-fluid skills" id="skills">
         <h3 className="skills-title">Skills</h3>
         <Row className="skills-row">
-          <Col xs={6} md={6} className="skills-content ">
+          <Col xs={12} md={6} className="skills-content ">
             <p>
               I am a dynamic, quick thinking creative professional with the
               skills to take a web design from the initial information
@@ -85,10 +85,14 @@ const About = () => {
               communicating promptly and clearly.
             </p>
           </Col>
-          <Col lg={6} md={4} w-100 className="skills-images">
-            <div className="div-img1">
+          <Col xs={12} md={6}  className="skills-images">
+            <div className="imgSkills">
+
+            </div>
+
+            {/* <div className="div-img1">
               <div className="firstImg">
-                <img src={image2} className="image4" />
+                <img src={image2} className="img-fluid image4" />
               </div>
               <div className="secondImg">
                 <img src={image4} className="image2" />
@@ -97,12 +101,12 @@ const About = () => {
 
             <div className="div-img2">
               <div className="thirdImg">
-                <img src={image1} className="image3" />
+                <img src={image1} className="img-fluid image3" />
               </div>
               <div className="fourthImg">
-                <img src={image3} className="image1" />
+                <img src={image3} className="img-fluid image1" />
               </div>
-            </div>
+            </div> */}
           </Col>
         </Row>
 

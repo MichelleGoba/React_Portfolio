@@ -1,6 +1,6 @@
 // import React from 'react';
 import "./home.css";
-import {useTypewriter, Cursor} from 'react-simple-typewriter';
+import {useTypewriter,} from 'react-simple-typewriter';
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import myLogo from "../../images/logo.png";
@@ -24,11 +24,11 @@ const Home = () => {
     <Container className="container-fluid home-section" id="home">
       <Row>
         <Col sm={12} md={8} lg={6} className="content">
-          <h1 className="greeting">
-            Hello! <span className="emoji">👋</span>
-          </h1>
+        <h1 className="greeting">
+        Hello! <span className="emoji">👋</span>
+    </h1>
        
-          <h1 className="greeting">My name is <span>M</span>ichelle</h1>
+          <h1 className="my-name">My name is <span>M</span>ichelle</h1>
           <h3 className="my-profession">
             Im a{" "}
             <span id="profession">{typrEffect}</span>  
@@ -42,6 +42,10 @@ const Home = () => {
           {/* Home buton start */}
           <div className="home-button">
             <a href="#about" className="btn">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
               More about Me
             </a>
           </div>

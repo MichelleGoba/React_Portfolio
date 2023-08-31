@@ -40,7 +40,23 @@ margin: 20px 0px;
 }
 .p-img{
   height: 250px;
+  width: 100%;
   border-radius: 5px;
+  transform: all .5s ease-in-out;
+}
+#p3{
+  
+}
+
+/* initially the paragraph is hidden */
+.p-img-box .description {
+  font-size: 16px ;
+  display: none;
+}
+
+/* Show the paragraph when hovering over p-img-box */
+.p-img-box:hover .description {
+  display: block;
 }
 
 .projects a{
@@ -49,21 +65,23 @@ margin: 20px 0px;
 
 }
 
+
+
   @media (max-width:991px)
-  {
-      
+  {   
       .portfolio .portfolio-item
       
       {
           flex: 0 0 50%;
           max-width: 100%;
-      }
-     
+      }    
   }
+
+  
   @media (max-width: 768px) {
     .projects, .p-img {
       width: 100%;
-      max-width: 300px;
+      max-width: 500px;
     }
   }
 
@@ -97,7 +115,6 @@ margin: 20px 0px;
   
   @media (max-width:450px){
   
-
     .projects, .p-img {
       display: grid;
       flex-direction: column;
