@@ -9,7 +9,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFaceSmile } from "@fortawesome/free-solid-svg-icons";
 
 
+
 const Contact = () => {
+  // contact form
   const initialFormData = {
     name: "",
     email: "",
@@ -59,7 +61,7 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_fifserf', 'template_yqbddze', form.current, 'ZQDAfkWgsQafZ_jc6')
+    emailjs.sendForm('service_fifserf', 'template_yqbddze', form.current, 'gnmTeRAYIuMI3oPr4')
       .then((result) => {
           console.log(result.text);
           console.log("message sent successfully")
@@ -81,6 +83,7 @@ const Contact = () => {
       sendEmail(e);
     }
   };
+  
 
   return (
     <Container className="container-fluid  contact-section" id="contact">

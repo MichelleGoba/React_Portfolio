@@ -48,10 +48,11 @@
     width: 160px;
     
   }
+ 
 
   .btn:hover{
     background-color:#fa9d88;
-  }
+  } 
 
 .social-icons{
     padding-top: 40px; 
