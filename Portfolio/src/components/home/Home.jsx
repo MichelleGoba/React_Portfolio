@@ -42,10 +42,6 @@ const Home = () => {
           {/* Home buton start */}
           <div className="home-button">
             <a href="#about" className="btn">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
               More about Me
             </a>
           </div>
@@ -70,7 +66,7 @@ const Home = () => {
 
         {/* Home image start */}
         <Col sm={12} md={8} lg={6} className="image-container">
-          <img src={myLogo} className="home-img mx-auto" />
+          <img src={myLogo} className="img-fluid home-img mx-auto" />
         </Col>
         {/* Home image end */}
       </Row>

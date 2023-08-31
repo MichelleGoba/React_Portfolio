@@ -4,10 +4,6 @@ import aboutImage from "../../images/abt-img.png";
 import "./about.css";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import image1 from "../../images/skills1.jpg";
-import image2 from "../../images/skills2.jpg";
-import image3 from "../../images/skills3.jpg";
-import image4 from "../../images/skills4.jpg";
 import CV from "../../images/Michelle Goba_CV.pdf";
 
 const About = () => {
@@ -90,32 +86,16 @@ const About = () => {
 
             </div>
 
-            {/* <div className="div-img1">
-              <div className="firstImg">
-                <img src={image2} className="img-fluid image4" />
-              </div>
-              <div className="secondImg">
-                <img src={image4} className="image2" />
-              </div>
-            </div>
-
-            <div className="div-img2">
-              <div className="thirdImg">
-                <img src={image1} className="img-fluid image3" />
-              </div>
-              <div className="fourthImg">
-                <img src={image3} className="img-fluid image1" />
-              </div>
-            </div> */}
           </Col>
         </Row>
 
         <Container className="container-fluid skills" id="education">
           <div className="accomplishments">
-            <div className="education-section">
+            <div className="education-section ">
               <h3 className="title">Education</h3>
               <div className="row">
-                <div className="timeline-box">
+                {/* <!-- ===== timeline item start ===== --> */}
+                <div className="timeline-box ">
                   <div className="timeline shadow-dark" id="timeline">
                     {/* <!-- ===== timeline item start ===== --> */}
                     <div className="timeline-item">
@@ -171,7 +151,8 @@ const About = () => {
             <div className="experience-section">
               <h3 className="title">Experience</h3>
               <div className="row">
-                <div className="timeline-box">
+                {/* Timeline Box */}
+                <div className="timeline-box ">
                   <div className="timeline shadow-dark">
                     {/* <!-- ===== timeline item ===== --> */}
                     <div className="timeline-item">

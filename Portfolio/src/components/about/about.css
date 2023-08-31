@@ -159,15 +159,25 @@
     gap: 25px;
     max-width: 100%;
   }
+
+  
   
   .education-section, .experience-section {
     flex: 0 0 50%;
     max-width: 50%;
     margin-bottom: 20px;
   }
+
+ 
 .row{
     padding-top: 30px;
 }
+
+.row  .timeline-box{
+    flex: 0 0  100%;
+    max-width: 100%;
+  }
+  
 
   .row .timeline
   {
@@ -177,6 +187,7 @@
       width: 100%;
      
   }
+ 
 
   .timeline-item{
     background-color: white;
@@ -203,6 +214,7 @@
 {
     padding-bottom: 0;
 } 
+
 .row .timeline .timeline-item::before
 {
     content: '';
@@ -318,9 +330,30 @@
 
   @media (max-width: 576px){
     .education-section, .experience-section{
-        flex: 0 0 100%;;
+        flex: 100%;;
         max-width: 100%;
     }
   }
-
+@media(min-width:576px){
+    #education, #timeline, .row{
+        max-width: 100%;
+    }
+}
   /* Media quiries */
+  @media (max-width:767px)
+{
+    
+    .education-section, .experience-section, 
+    .timeline-box, #timeline, .row 
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+  @media (min-width: 768px) {
+    .timeline-box, #timeline, .row {
+      width: 100%; /* Make the timeline boxes take up 50% of the container */
+    
+    }
+  }
