@@ -158,6 +158,7 @@ const Contact = () => {
             </div>
             <ReCAPTCHA
               sitekey="6LfPb-MnAAAAAIcqD6LGgxKJ44a_Knfx-ZipmtSk"
+              
               onChange={(val) => setGoogleCaptcha(val)}
             />
             <button disabled={!googleCaptcha} type="submit" className="button">
