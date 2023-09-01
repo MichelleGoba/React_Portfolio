@@ -15,6 +15,7 @@
 
 /* Contect start */
 .content p{
+    font-size:20px;
     text-align: justify;
 }
 .greeting{
@@ -112,6 +113,46 @@
     padding-left: 40px;
 
     
+  }
+
+  @media (max-width: 600px){
+    .greeting{
+        font-size: 30px;
+    }
+    .my-profession{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .home-img{
+        height: 100%;
+        width: 100%;
+
+
+      }
+      .content p{
+        font-size: 16px;
+    }
+
+  }
+  @media (min-width: 601px){
+    .greeting{
+        font-size: 60px;
+    }
+    .my-profession{
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .home-img{
+        height: 100%;
+        width: 100%;
+        text-align: center;
+
+      }
+      .content p{
+        
+       width: 100%;
+    }
+
   }
 
   
