@@ -22,11 +22,17 @@
 .nav, .ms-auto, .dropdown, .dropdown-menu{
     background-color: #FED2C8;
 }
-#basic-navbar-nav, #basic-nav-dropdown{
-    background-color: #FED2C8; 
+.nav, .ms-auto, .dropdown, .dropdown-menu:hover{
+    background-color: #FED2C8;
 }
 
+#basic-navbar-nav a{
+    background-color: #FED2C8;
+}
 
+#basic-navbar-nav a:hover{
+  color:#F24E1E;
+}
 
 
 .name{
@@ -42,3 +48,11 @@
     background-color: #FED2C8;
 }
 
+#basic-navbar-nav .nav-link{
+    color: rgb(34, 33, 33);
+    font-weight: 500;
+}
+
+#basic-navbar-nav .nav-link:hover{
+    color: tomato;
+}

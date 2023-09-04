@@ -87,7 +87,7 @@ const Contact = () => {
   return (
     <Container className="container-fluid  contact-section" id="contact">
       <h3 className="title">Contact Me</h3>
-      <h4>Send me an Email</h4>
+      <h4>Send me an email</h4>
 
       <div className="contact-container">
         <div className="contact-box">

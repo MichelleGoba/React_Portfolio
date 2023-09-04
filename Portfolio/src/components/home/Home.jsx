@@ -25,7 +25,7 @@ const Home = () => {
       <Row>
         <Col sm={12} md={8} lg={6} className="content">
         <h1 className="greeting">
-        Hello! <span className="emoji">👋</span>
+        Hello! <span className="wave">👋</span>
     </h1>
        <h3 className="my-profession">
             Im a{" "}
@@ -38,11 +38,12 @@ const Home = () => {
           </p>
 
           {/* Home buton start */}
+        
           <div className="home-button">
-            <a href="#about" className="btn">
-              More about Me
-            </a>
+          <a href="about">More about me</a>
           </div>
+          
+
           {/* Home buton end */}
 
           {/* Social icons start*/}

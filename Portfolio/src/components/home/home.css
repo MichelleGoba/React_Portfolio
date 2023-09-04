@@ -27,28 +27,29 @@ body{
 }
 
 
-/* greeing span */
-.greeting > .emoji {
-    animation: hello-hand 2.5s infinite;
+/* greeing span start*/
+.greeting .wave{
+    animation-duration: 2.5s;  /* Hand speed */
+    animation-iteration-count: infinite;  /* Hand does stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
 }
 
-@keyframes hello-hand {
-    0% {
-        transform: translateY(0);
-    }
-    25% {
-        transform: translateY(-20px);
-    }
-    50% {
-        transform: translateY(0);
-    }
-    75% {
-        transform: translateY(20px);
-    }
-    100% {
-        transform: translateY(0);
-    }
+  
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
 }
+
+
 
 .my-name span{
     font-size: 60px;
@@ -56,6 +57,7 @@ body{
     font-family: 'Clicker Script', cursive;
     font-weight: 600;
 }
+
 
 .my-profession{
     font-size: 40px;
@@ -66,33 +68,57 @@ body{
     color: #F24E1E;
 } 
 
-
-.home-button{
-    padding-top: 40px;
-}
-
-.btn{
+.home-button {
+    margin-top:70px;
+    width:160px;
+    padding:10px;  
     border-radius: 20px;
+    background:tomato;
+   text-align: center;
+   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+   transition: all 0.3s ease 0s;
+   cursor: pointer;
+   outline: none;
+
+  }
+  .home-button:hover{
+    /* background-color: orange; */
+    background-color: orange;
+    box-shadow: 0px 15px 20px rgba(229, 186, 46, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+    
+  }
+  .home-button a{
+    text-decoration: none;
     color: white;
-    background-color: orangered; 
-    width: 160px;
-    
   }
 
-  .btn:hover{
-    background-color: rgb(255, 136, 0);
-  
-  }
 
-   /* @keyframes glow {
-    0%{
-        box-shadow: 5px 5px 20px rgb(93, 52, 168), -5px -5px 20px rgb(93, 52, 168);
+  .button {
+    width: 140px;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
     }
-    
-}
-   */
-
-
+  
+  .button:hover {
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
 .social-icons{
     padding-top: 40px; 
     display: inline-block;
@@ -100,14 +126,14 @@ body{
   
 }
 .social-icons a{
-    color: #F24E1E;
+    color: tomato;
     font-size: 40px;
     margin: 0 10px;  
    
 }
 
 .social-icons a:hover{
-    color:#fc947c;
+    color:orange;
   
     
 }
