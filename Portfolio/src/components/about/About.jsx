@@ -154,7 +154,20 @@ const About = () => {
                 {/* Timeline Box */}
                 <div className="timeline-box ">
                   <div className="timeline shadow-dark">
-                    {/* <!-- ===== timeline item ===== --> */}
+                    {/* <!-- ===== timeline item start===== --> */}
+                    <div className="timeline-item">
+                      <div className="circle-dot"></div>
+                      <h3 className="timeline-date">
+                        <i className="fa fa-calendar"></i> July - Current
+                      </h3>
+                      <h4 className="timeline-title">Younglings Africa</h4>
+                      <h5>Junior Software Developer</h5>
+                      <p className="timeline-text">
+                      Im responsible for building, developing, and maintaining websites using HTML, CSS, and JavaScript, and implementing front-end logic to govern the behavior of visual elements in web applications.
+                      </p>
+                    </div>
+                      {/* <!-- ===== timeline item end===== --> */}
+                        {/* <!-- ===== timeline item start===== --> */}
                     <div className="timeline-item">
                       <div className="circle-dot"></div>
                       <h3 className="timeline-date">
@@ -163,13 +176,9 @@ const About = () => {
                       <h4 className="timeline-title">UVU Africa</h4>
                       <h5>Software Development Intern</h5>
                       <p className="timeline-text">
-                        Im responsible for using HTML, CSS, and JavaScript to
-                        construct, develop, and maintain websites. I put into
-                        practice the front-end logic that controls how web
-                        applications visual components behave. I am also in
-                        charge of coding, designing, and deploying development
-                        initiatives on the server and client side. I work with
-                        developers to design algorithms and flowcharts.
+                       Worked on projects that developed websites and applications that allowed learners, teachers, and parents to access any school related information on any device.
+
+                      
                       </p>
                     </div>
                     {/* <!-- ===== timeline item ===== --> */}
@@ -183,10 +192,7 @@ const About = () => {
                       </h4>
                       <h5>Safety Officer</h5>
                       <p className="timeline-text">
-                        In this position, was in charge of assuring the companys
-                        total compliance with safety, health, and environmental
-                        laws, regulations, policies, procedures, and
-                        legislation.
+                      I was in charge of assuring the company's total compliance with safety, health, and environmental laws, regulations, policies, procedures, and legislation in the past.
                       </p>
                     </div>
                     {/* <!-- ===== timeline item ===== -->
@@ -200,10 +206,7 @@ const About = () => {
                       <h5>Teaching Assistant</h5>
                       <p className="timeline-text">
                         Assisted 35 students with Environmental Impact
-                        Assessment assignments. Supported 35 students with their
-                        map making procedures and assignments. Graded
-                        assignments for 35 students and ran className help
-                        sessions.
+                        Assessment assignments. 
                       </p>
                     </div>
                   </div>
