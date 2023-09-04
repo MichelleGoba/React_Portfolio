@@ -33,6 +33,7 @@
   
 }
 
+
 .icon{
     background-color: #FED2C8;
     padding-top: 20px;
@@ -147,14 +148,6 @@
     pointer-events: none;
     animation: animate 5.5s linear infinite;
 }
-/* @keyframes animate{
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
-}  */
 
 .text span{
     position: absolute;
@@ -176,5 +169,26 @@
     margin-bottom: 8rem !important;
     display: flex;
     flex-direction: row;
+    width: 100%;
+    margin-bottom: 20px;
   }  
-}
+  .page-footer {
+    text-align: center;
+  }
+  .row {
+    flex-direction: column;
+  }
+  
+  .footer-copyright {
+    font-size: 14px;
+  }
+  .container-fluid {
+    padding: 0;
+  }
+  .icon {
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+
+} 
