@@ -4,6 +4,9 @@
 .portfolio-section{
   padding-top: 40px;
 }
+.portfolio-section .title{
+  text-align: center;
+}
 
 .portfolio-section h4{
   padding-top: 40px;

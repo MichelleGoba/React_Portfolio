@@ -90,7 +90,10 @@ const About = () => {
         </Row>
 
         <Container className="container-fluid skills" id="education">
+            <p className="qualification">Qualifications</p>
+            <p className="journey">My personal journey</p>
           <div className="accomplishments">
+            
             <div className="education-section ">
               <h3 className="title">Education</h3>
               <div className="row">

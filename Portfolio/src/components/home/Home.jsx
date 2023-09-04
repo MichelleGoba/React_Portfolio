@@ -40,7 +40,7 @@ const Home = () => {
           {/* Home buton start */}
         
           <div className="home-button">
-          <a href="about">More about me</a>
+          <a href="#contact">Contact Me</a>
           </div>
           
 
