@@ -2,10 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
 
+}
+body{
+    background-color:  #FBE9E5;
+}
 .home-section{
     padding-top: 100px;
+    
 }
 
 .row{
@@ -21,6 +25,7 @@
 .greeting{
     font-size: 60px;
 }
+
 
 /* greeing span */
 .greeting > .emoji {
@@ -69,15 +74,24 @@
 .btn{
     border-radius: 20px;
     color: white;
-    background-color: orangered;
+    background-color: orangered; 
     width: 160px;
     
   }
-  
 
   .btn:hover{
-    background-color:#fa9d88;
-  } 
+    background-color: rgb(255, 136, 0);
+  
+  }
+
+   /* @keyframes glow {
+    0%{
+        box-shadow: 5px 5px 20px rgb(93, 52, 168), -5px -5px 20px rgb(93, 52, 168);
+    }
+    
+}
+   */
+
 
 .social-icons{
     padding-top: 40px; 
@@ -111,6 +125,7 @@
     width: 600px;
     margin: 10px;
     padding-left: 40px;
+
 
     
   }

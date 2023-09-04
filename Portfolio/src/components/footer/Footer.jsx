@@ -93,9 +93,7 @@ const Footer = () => {
               <h3 className="text">Developer- </h3>
             </div>
           </div>
-          <div>
-            <div></div>
-          </div>
+         
           {/* logo end */}
         </div>
       </div>

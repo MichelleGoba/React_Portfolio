@@ -27,12 +27,10 @@ const Home = () => {
         <h1 className="greeting">
         Hello! <span className="emoji">👋</span>
     </h1>
-       
-          <h1 className="my-name">My name is <span>M</span>ichelle</h1>
-          <h3 className="my-profession">
+       <h3 className="my-profession">
             Im a{" "}
             <span id="profession">{typrEffect}</span>  
-          </h3>
+          </h3> 
           <p>
             I am a Junior Software Developer from Cape Town who is learning how
             to navigate the development processes. My area of competence
