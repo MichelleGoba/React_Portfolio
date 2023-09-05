@@ -15,7 +15,7 @@
     font-weight: 700;
  }
  .profession{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 600;
     color: orangered;
  }
@@ -62,13 +62,14 @@
 }
 .btn{
     border-radius: 20px;
-    color: white;
-    background-color: tomato; 
+    color: #000;
+    background-color: rgba(255, 99, 71, 0.808); 
     width: 160px;
 
   }
 
   .btn:hover{
+    color: white;
     background-color: rgb(255, 136, 0);
   
   }
@@ -117,6 +118,7 @@
         
     background-size: cover;
     }
+
     20%{
         background-image: url(../../images/css.png);
         
@@ -143,6 +145,13 @@
         background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    }
+    10%{
+        background-image: url(../../images/office.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
     }
 }
 
@@ -368,6 +377,12 @@
 
     .about-image, .content{
         width: 100%;
+    }
+   .profession{
+    font-size: 20px;
+   }
+    .about-image{
+        margin-bottom:30px ;
     }
     
   }

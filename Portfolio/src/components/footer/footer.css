@@ -35,13 +35,11 @@
 
 
 .icon{
-    background-color: #FED2C8;
+   
     padding-top: 20px;
 }
 
-.icon a{
-    background-color: #FED2C8;
-}
+
 
 .row{
     padding: 0;
@@ -192,3 +190,14 @@
 
 
 } 
+
+@media(max-width:375px){
+    #copyright{
+        padding-left: 76px;
+        padding-top: 30px;
+    }
+    #logo{
+        padding-top: 25px;
+        padding-left: 165px;
+    }
+}

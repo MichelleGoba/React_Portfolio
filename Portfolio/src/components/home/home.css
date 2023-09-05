@@ -5,7 +5,7 @@
 
 }
 body{
-    background-color:  #FBE9E5;
+    background-color:  #fbe9e588;
 }
 .home-section{
     padding-top: 100px;
@@ -68,21 +68,26 @@ body{
     color: #F24E1E;
 } 
 
+.home-buttons{
+  display: flex;
+  gap: 10px;
+}
+
 .home-button {
-    margin-top:70px;
+    margin-top:40px;
+    margin-left: 50px;
     width:160px;
     padding:10px;  
     border-radius: 20px;
-    background:tomato;
-   text-align: center;
-   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-   transition: all 0.3s ease 0s;
-   cursor: pointer;
-   outline: none;
+    background:rgba(255, 99, 71, 0.808);
+    text-align: center;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
 
   }
   .home-button:hover{
-    /* background-color: orange; */
     background-color: orange;
     box-shadow: 0px 15px 20px rgba(229, 186, 46, 0.4);
     color: #fff;
@@ -91,52 +96,106 @@ body{
   }
   .home-button a{
     text-decoration: none;
-    color: white;
+    color: #272525;
   }
 
 
-  .button {
-    width: 140px;
-    height: 45px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 2.5px;
-    font-weight: 500;
-    color: #000;
-    background-color: #fff;
-    border: none;
-    border-radius: 45px;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease 0s;
+
+  /* social icons start */
+
+  .social-icons{
+    padding-top: 50px;
+    display: inline-flex;
+  }
+
+.social-icons .icon{
+    margin: 0 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
     cursor: pointer;
-    outline: none;
-    }
-  
-  .button:hover {
-    background-color: #2EE59D;
-    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-    color: #fff;
-    transform: translateY(-7px);
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265,1.55);
   }
-.social-icons{
-    padding-top: 40px; 
-    display: inline-block;
- 
-  
-}
-.social-icons a{
-    color: tomato;
-    font-size: 40px;
-    margin: 0 10px;  
-   
-}
+  .social-icons .icon a span{
+    position: relative;
+    height: 50px;
+    width: 50px;
+    color: #272525;
+    display: block;
+    background-color: rgba(255, 99, 71, 0.808);
+    border-radius: 50%;
+    z-index: 2;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+  }
 
-.social-icons a:hover{
-    color:orange;
-  
-    
-}
+  .social-icons .icon:hover a span {
+    color: #fff;
+  } 
+
+  .social-icons .icon a span i{
+    font-size: 20px;
+    line-height:50px ;
+    padding-left: 15px;
+ 
+  }
+
+  .social-icons .icon .tooltip{
+    position: absolute;
+    top: 0px;
+    color: #fff;
+    background:#fff;
+    font-size: 15px;
+    padding: 10px 15px;
+    border-radius: 25px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265,1.55);
+  }
+  .social-icons .icon:hover .tooltip{
+    top: -70px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .social-icons .icon .tooltip::before{
+    position: absolute;
+    content: '';
+    height: 15px;
+    width: 15px;
+    /* background:#fff ; */
+    bottom: -8px;
+    left:50% ;
+    transform: translateX(-50%) rotate(45deg);
+  }
+
+  .social-icons .icon:hover a span,
+  .social-icons .icon:hover .tooltip{
+    text-shadow:0px -1px 0px rgba(0,0,0,0.4) ;
+  }
+  .social-icons .facebook:hover a span,
+  .social-icons .facebook:hover .tooltip,
+  .social-icons .facebook:hover .tooltip::before{
+    background:#3B5999;
+  }
+  .social-icons .instagram:hover a span,
+  .social-icons .instagram:hover .tooltip,
+  .social-icons .instagram:hover .tooltip::before{
+    background:#e1306c;
+  }
+  .social-icons .linkedin:hover a span,
+  .social-icons .linkedin:hover .tooltip,
+  .social-icons .linkedin:hover .tooltip::before{
+    background:#0077b5;
+  }
+  .social-icons .github:hover a span,
+  .social-icons .github:hover .tooltip,
+  .social-icons .GITHUB:hover .tooltip::before{
+    background:#333;
+  }
 
 
   .image-container{
@@ -156,6 +215,9 @@ body{
     
   }
 
+
+  /* media quiries */
+
   @media (max-width: 600px){
     .greeting{
         font-size: 30px;
@@ -167,8 +229,12 @@ body{
     .home-img{
         height: 100%;
         width: 100%;
+     
 
-
+      }
+      .image-container{
+        padding-top: 50px;
+       
       }
       .content p{
         font-size: 16px;
@@ -187,8 +253,10 @@ body{
         height: 100%;
         width: 100%;
         text-align: center;
+        
 
       }
+     
       .content p{
         
        width: 100%;

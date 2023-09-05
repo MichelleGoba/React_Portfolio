@@ -37,18 +37,28 @@ const Home = () => {
             includes designing websites, applications, and many more...
           </p>
 
-          {/* Home buton start */}
-        
-          <div className="home-button">
-          <a href="#contact">Contact Me</a>
-          </div>
+      
           
-
-          {/* Home buton end */}
-
           {/* Social icons start*/}
           <div className="social-icons">
-            <a href="#">
+              <div className="icon facebook">
+                <div className="tooltip">Facebook</div>
+                <a href="#"><span><i className="fab fa-facebook-f"></i></span></a>
+            </div>
+            <div className="icon instagram">
+                <div className="tooltip">Instagram</div>
+                <a><span><i className="fab fa-instagram"></i></span></a>
+            </div>
+            <div className="icon linkedin">
+                <div className="tooltip">Linkedin</div>
+                <a><span><i className="fab fa-linkedin"></i></span></a>
+            </div>
+            <div className="icon github">
+                <div className="tooltip">Github</div>
+                <a><span><i className="fab fa-github"></i></span></a>
+            </div>
+
+            {/* <a href="#">
               <FontAwesomeIcon icon={faFacebook} />
             </a>
 
@@ -58,9 +68,16 @@ const Home = () => {
 
             <a href="#">
               <FontAwesomeIcon icon={faLinkedin} />
-            </a>
+            </a> */}
           </div>
           {/* Social icons end */}
+
+             {/* Home buton start */}
+        
+             <div className="home-button">
+              <a href="#contact">Contact Me</a>
+            </div>
+          {/* Home buton end */}
         </Col>
 
         {/* Home image start */}

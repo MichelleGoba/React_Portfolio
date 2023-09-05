@@ -123,11 +123,16 @@
  margin-top: 20px;
   border-radius: 20px;
   color: white;
-  background-color:#F24E1E;
+  background-color:rgba(255, 99, 71, 0.808);
   width: 160px;
   
 }
-
+.button:hover {
+  background-color: #2EE59D;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
 
   
 /* Media quiries */
