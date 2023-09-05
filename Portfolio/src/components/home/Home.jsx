@@ -5,10 +5,7 @@ import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import myLogo from "../../images/logo.png";
 import Row from "react-bootstrap/Row";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook } from "@fortawesome/free-brands-svg-icons";
-import { faInstagram } from "@fortawesome/free-brands-svg-icons";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+
 
 
 
@@ -22,7 +19,7 @@ const Home = () => {
 
   return (
     <Container className="container-fluid home-section" id="home">
-      <Row>
+      <Row className="home-row"> 
         <Col sm={12} md={8} lg={6} className="content">
         <h1 className="greeting">
         Hello! <span className="wave">👋</span>

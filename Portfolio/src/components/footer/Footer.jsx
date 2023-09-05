@@ -44,7 +44,7 @@ const Footer = () => {
       <div className="container-fluid text-md-left">
         <div className="row" id="footer">
           <div className="col-md-4 mt-md-0 mt-3" id="copyright">
-            <p className="footer-copyright py-3">© 2023 Copyright: Michelle</p>
+            <p className="footer-copyright py-3">© Michelle Goba: 2023</p>
           </div>
 
           {/* icons div start */}

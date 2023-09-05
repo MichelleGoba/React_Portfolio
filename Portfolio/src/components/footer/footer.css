@@ -161,7 +161,139 @@
 } 
 
 /* logo end */
+ 
+/* For Desktop View */
+@media screen and (min-width: 1024px) {
+   
+}
 
+/* For Tablet view */
+@media screen and (min-device-width: 768px)
+    and (max-device-width: 1024px) {
+    
+}
+
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px)
+    and (orientation: portrait) {
+        #copyright{
+            padding-left: 76px;
+            padding-top: 30px;
+        }
+        #logo{
+            padding-top: 25px;
+            padding-left: 165px;
+        }
+    }
+
+
+    @media(max-width:767px){
+        .col-md-4{
+          margin-bottom: 8rem !important;
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+          margin-bottom: 20px;
+        }  
+        .page-footer {
+          text-align: center;
+        }
+        .row {
+          flex-direction: column;
+        }
+        
+        .footer-copyright {
+          font-size: 14px;
+        }
+        .container-fluid {
+          padding: 0;
+        }
+        .icon {
+          margin: 0 auto;
+          padding: 10px;
+        }
+       
+       
+    }
+
+    @media(min-width:768px){
+        #copyright{
+            padding-left: 35px;
+            padding-top: 45px;
+        }
+        #logo{
+            padding-top: 46px;
+            padding-left: 125px;
+    
+      }
+    }
+
+      @media (min-width:820px) {
+        #copyright{
+            padding-left: 35px;
+            padding-top: 30px;
+        }
+        #logo{
+            padding-top: 25px;
+            padding-left: 180px;
+        }
+        
+      }
+
+      @media(max-width:540px){
+        #copyright{
+            padding-left: 150px;
+            
+        }
+        #logo{
+            padding-top: 25px;padding-left: 252px;
+      }
+    }
+
+    @media(max-width:375px){
+        #copyright{
+            padding-left: 100px;
+        
+        }
+        #logo{
+           
+            padding-left: 170px;
+        }
+    }
+    @media(min-width:376px){
+      
+        #logo{
+           
+            padding-left: 210px;
+        }
+    }
+
+
+    /* For iPhone 5 Portrait or Landscape View */
+@media (device-height: 568px)
+and (device-width: 320px)
+and (-webkit-min-device-pixel-ratio: 2) {
+.gfg-div {
+    width: 400px;
+    height: 400px;
+    background-color: cornflowerblue;
+    color: black;
+}
+}
+
+/* For iPhone 6 and 6 plus Portrait or Landscape View */
+@media (min-device-height: 667px)
+and (min-device-width: 375px)
+and (-webkit-min-device-pixel-ratio: 3) {
+.gfg-div {
+    width: 400px;
+    height: 400px;
+    background-color: darkgoldenrod;
+    color: black;
+}
+};
+ 
+/* 
 @media(max-width:767){
   .col-md-4{
     margin-bottom: 8rem !important;
@@ -189,8 +321,8 @@
   }
 
 
-} 
-
+}  */
+/* 
 @media(max-width:375px){
     #copyright{
         padding-left: 76px;
@@ -200,4 +332,5 @@
         padding-top: 25px;
         padding-left: 165px;
     }
-}
+} */
+

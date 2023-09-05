@@ -408,6 +408,15 @@
         flex: 0 0 100%;
         max-width: 100%;
     }
+
+    .skills-content{
+        padding-left: 25px;
+    }
+    .title, .timeline-box{
+        padding-left: 20px;
+    }
+
+    
 }
 
   @media (min-width: 768px) {
