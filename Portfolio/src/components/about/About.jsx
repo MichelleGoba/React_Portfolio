@@ -50,7 +50,7 @@ const About = () => {
 
           <div className="abt-buttons">
             <div className="download-btn">
-              <a href={CV} className="btn" id="download-btn">
+              <a href={CV} target="_blank" rel="noopener noreferrer" className="btn" id="download-btn">
                 Download CV
               </a>
             </div>

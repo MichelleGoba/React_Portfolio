@@ -17,6 +17,7 @@ const Contact = () => {
 
   const [formData, setFormData] = useState(initialFormData);
   const [errors, setErrors] = useState({});
+  const [recaptchaValid, setRecaptchaValid] = useState(true); // Initially set to true
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -79,7 +80,14 @@ const Contact = () => {
     const validationErrors = validateForm();
     setErrors(validationErrors);
 
-    if (Object.keys(validationErrors).length === 0) {
+
+    if(!googleCaptcha){
+      setRecaptchaValid(false);
+    }else{
+      setRecaptchaValid(true);
+    }
+    
+    if (Object.keys(validationErrors).length === 0 && recaptchaValid) {
       alert("Message submitted successfully");
       setFormData(initialFormData);
 
@@ -121,7 +129,7 @@ const Contact = () => {
                 onChange={handleChange}
                 value={formData.name}
               ></input>
-              {errors.name && <span>{errors.name}</span>}
+              {errors.name && <span style={{ color: "red" }}>{errors.name}</span>}
             </div>
             <div>
               <input
@@ -133,7 +141,7 @@ const Contact = () => {
                 onChange={handleChange}
                 value={formData.email}
               ></input>
-              {errors.email && <span>{errors.email}</span>}
+              {errors.email && <span style={{ color: "red" }}>{errors.email}</span>}
             </div>
             <div>
               <input
@@ -145,7 +153,7 @@ const Contact = () => {
                 onChange={handleChange}
                 value={formData.subject}
               ></input>
-              {errors.subject && <span>{errors.subject}</span>}
+      
             </div>
             <div>
               <textarea
@@ -157,13 +165,24 @@ const Contact = () => {
                 onChange={handleChange}
                 value={formData.message}
               ></textarea>
-              {errors.message && <span>{errors.message}</span>}
+              {errors.message && <span style={{ color: "red" }}>{errors.message}</span>}
             </div>
+
             <ReCAPTCHA
               sitekey="6LfPb-MnAAAAAIcqD6LGgxKJ44a_Knfx-ZipmtSk"
-              onChange={(val) => setGoogleCaptcha(val)}
-            />
-            <button disabled={!googleCaptcha} type="submit" className="button">
+              onChange={(val) => {
+                setGoogleCaptcha(val);
+                setRecaptchaValid(true);  //reset the validation when the reCaptcha changes
+            }}
+            /> 
+                        {!recaptchaValid && (
+              <span style={{ color: "red" }}>
+                Please verify that you are not a robot.
+              </span>
+            )}
+
+
+            <button  type="submit" className="button">
               Submit
             </button>
           </form>

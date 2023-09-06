@@ -86,7 +86,7 @@ body {
 
 .home-button {
   margin-top: 40px;
-  margin-left: 50px;
+  margin-left: 10px;
   width: 160px;
   padding: 10px;
   border-radius: 20px;
@@ -111,7 +111,7 @@ body {
 /* social icons start */
 
 .social-icons {
-  padding-top: 50px;
+  padding-top: 25 +px;
   display: inline-flex;
 }
 
@@ -162,21 +162,24 @@ body {
   transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .social-icons .icon:hover .tooltip {
-  top: -70px;
+  top: -40px;
   opacity: 1;
   pointer-events: auto;
 }
 
+
+/* icon arrow start*/
 .social-icons .icon .tooltip::before {
   position: absolute;
   content: "";
   height: 15px;
   width: 15px;
-  /* background:#fff ; */
   bottom: -8px;
   left: 50%;
   transform: translateX(-50%) rotate(45deg);
 }
+
+/* icon error end */
 
 .social-icons .icon:hover a span,
 .social-icons .icon:hover .tooltip {
@@ -199,7 +202,7 @@ body {
 }
 .social-icons .github:hover a span,
 .social-icons .github:hover .tooltip,
-.social-icons .GITHUB:hover .tooltip::before {
+.social-icons .github:hover .tooltip::before {
   background: #333;
 }
 

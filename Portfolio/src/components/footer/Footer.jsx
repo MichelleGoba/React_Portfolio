@@ -3,7 +3,6 @@ import "./footer.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faFacebook,
   faGithub,
   faInstagram,
   faLinkedin,
@@ -30,7 +29,7 @@ const Footer = () => {
       setInterval(() => {
         rotation = (rotation + 1) % 360; // Increment rotation from 0 to 359 degrees
         spans.forEach((span, index) => {
-          span.style.transform = `rotate(${index * 33 + rotation}deg)`; // How close are the rotating words to each other
+          span.style.transform = `rotate(${index * 35 + rotation}deg)`; // How close are the rotating words to each other
         });
       }, 100); // Adjust the interval for the rotation speed, with 100 rotation does not return to 0 anticlockwise, it rotates clockwise
     };
@@ -49,16 +48,9 @@ const Footer = () => {
 
           {/* icons div start */}
           <div className="col-md-4 mb-md-0 mb-3" id="icons">
-            <div className="icon facebook">
-              <a href="">
-                <span>
-                  <FontAwesomeIcon icon={faFacebook} />
-                </span>
-              </a>
-            </div>
 
             <div className="icon instagram">
-              <a href="https://www.instagram.com/michelle_goba_/">
+              <a href="https://www.instagram.com/michelle_goba_/" target="_blank" rel="noopener noreferrer">
                 <span>
                   <FontAwesomeIcon icon={faInstagram} />
                 </span>
@@ -66,7 +58,7 @@ const Footer = () => {
             </div>
 
             <div className="icon linkedin">
-              <a href="https://www.linkedin.com/in/michelle-goba-12955ba2/">
+              <a href="https://www.linkedin.com/in/michelle-goba-12955ba2/" target="_blank" rel="noopener noreferrer">
                 <div className="tooltip">Linkedin</div>
                 <span>
                   <FontAwesomeIcon icon={faLinkedin} />
@@ -75,7 +67,7 @@ const Footer = () => {
             </div>
 
             <div className="icon github">
-              <a href="https://github.com/MichelleGoba">
+              <a href="https://github.com/MichelleGoba" target="_blank" rel="noopener noreferrer">
                 <span>
                   <FontAwesomeIcon icon={faGithub} className="footer-icon" />
                 </span>

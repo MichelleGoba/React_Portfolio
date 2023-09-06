@@ -33,17 +33,9 @@ const Home = () => {
 
           {/* Social icons start*/}
           <div className="social-icons">
-            <div className="icon facebook">
-              <div className="tooltip">Facebook</div>
-              <a href="https://www.facebook.com/chimelle.gee/">
-                <span>
-                  <i className="fab fa-facebook-f"></i>
-                </span>
-              </a>
-            </div>
             <div className="icon instagram">
               <div className="tooltip">Instagram</div>
-              <a href="https://www.instagram.com/michelle_goba_/">
+              <a href='https://www.instagram.com/michelle_goba_/' target="_blank" rel="noopener noreferrer">
                 <span>
                   <i className="fab fa-instagram"></i>
                 </span>
@@ -51,7 +43,7 @@ const Home = () => {
             </div>
             <div className="icon linkedin">
               <div className="tooltip">Linkedin</div>
-              <a href="https://www.linkedin.com/in/michelle-goba-12955ba2/">
+              <a href="https://www.linkedin.com/in/michelle-goba-12955ba2/" target="_blank" rel="noopener noreferrer">
                 <span>
                   <i className="fab fa-linkedin"></i>
                 </span>
@@ -59,7 +51,7 @@ const Home = () => {
             </div>
             <div className="icon github">
               <div className="tooltip">Github</div>
-              <a href="https://github.com/MichelleGoba">
+              <a href="https://github.com/MichelleGoba" target="_blank" rel="noopener noreferrer">
                 <span>
                   <i className="fab fa-github"></i>
                 </span>
