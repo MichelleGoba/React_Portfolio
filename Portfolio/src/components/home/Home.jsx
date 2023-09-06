@@ -21,6 +21,7 @@ const Home = () => {
           <h1 className="greeting">
             Hello! <span className="wave">👋</span>
           </h1>
+          <div className="my-name">I'm <span>M</span>ichelle</div>
           <h3 className="my-profession">
             Im a <span id="profession">{typrEffect}</span>
           </h3>
