@@ -1,58 +1,62 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Header section */
 
-.Navbar{
-    background-color: #FED2C8;
-    max-width: 100%;  
+.Navbar {
+  background-color: #fed2c8;
+  max-width: 100%;
 }
 
-.logo{
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-    background:#F24E1E;
-    padding: 0; 
-    
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background: #f24e1e;
+  padding: 0;
 }
-.nav, .ms-auto, .dropdown, .dropdown-menu{
-    background-color: #FED2C8;
+.nav,
+.ms-auto,
+.dropdown,
+.dropdown-menu {
+  background-color: #fed2c8;
 }
-.nav, .ms-auto, .dropdown, .dropdown-menu:hover{
-    background-color: #FED2C8;
-}
-
-#basic-navbar-nav a{
-    background-color: #FED2C8;
-}
-
-#basic-navbar-nav a:hover{
-  color:#F24E1E;
+.nav,
+.ms-auto,
+.dropdown,
+.dropdown-menu:hover {
+  background-color: #fed2c8;
 }
 
-
-.name{
-    padding-left: 10px;
-    font-weight: 600;
-    font-size: 25px;
+#basic-navbar-nav a {
+  background-color: #fed2c8;
 }
 
-.name span{
-    font-family: 'Clicker Script', cursive;
-    font-weight: 600;
-    color:#F24E1E ;
-    background-color: #FED2C8;
+#basic-navbar-nav a:hover {
+  color: #f24e1e;
 }
 
-#basic-navbar-nav .nav-link{
-    color: rgb(34, 33, 33);
-    font-weight: 500;
+.name {
+  padding-left: 10px;
+  font-weight: 600;
+  font-size: 25px;
 }
 
-#basic-navbar-nav .nav-link:hover{
-    color: tomato;
+.name span {
+  font-family: "Clicker Script", cursive;
+  font-weight: 600;
+  color: #f24e1e;
+  background-color: #fed2c8;
+}
+
+#basic-navbar-nav .nav-link {
+  color: rgb(34, 33, 33);
+  font-weight: 500;
+}
+
+#basic-navbar-nav .nav-link:hover {
+  color: tomato;
 }

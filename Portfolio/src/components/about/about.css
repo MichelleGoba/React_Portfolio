@@ -1,29 +1,28 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', 'Sans-serif';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "Sans-serif";
 }
 
 /* About Me section start */
- .about-section{
-    padding-top: 100px;
+.about-section {
+  padding-top: 100px;
+}
 
- }
-
- .title{
-    font-weight: 700;
- }
- .profession{
-    font-size: 25px;
-    font-weight: 600;
-    color: orangered;
- }
- .content p{
-    font-size: 18px;
-    line-height: 30px;
- }
- /* .about-title::before{
+.title {
+  font-weight: 700;
+}
+.profession {
+  font-size: 25px;
+  font-weight: 600;
+  color: orangered;
+}
+.content p {
+  font-size: 18px;
+  line-height: 30px;
+}
+/* .about-title::before{
     content: '';
     height:4px;
     width: 50px;
@@ -44,384 +43,401 @@
     margin-top: 8px;
 } */
 
-
-
-#about-image{
-    height: 400px; 
-    padding-left: 50px;
-    padding-top: 30px;
-    width: 500px;
+#about-image {
+  height: 400px;
+  padding-left: 50px;
+  padding-top: 30px;
+  width: 500px;
 }
-.personal-info{
-    padding-top: 10px;
+.personal-info {
+  padding-top: 10px;
 }
-.abt-buttons{
-    padding-top: 10px;
-    display: flex;
-    
+.abt-buttons {
+  padding-top: 10px;
+  display: flex;
 }
-.btn{
-    border-radius: 20px;
-    color: #000;
-    background-color: rgba(255, 99, 71, 0.808); 
-    width: 160px;
+.btn {
+  border-radius: 20px;
+  color: #000;
+  background-color: rgba(255, 99, 71, 0.808);
+  width: 160px;
+}
 
-  }
+.btn:hover {
+  color: white;
+  background-color: rgb(255, 136, 0);
+}
 
-  .btn:hover{
-    color: white;
-    background-color: rgb(255, 136, 0);
-  
-  }
-
-.hire-btn{
-    padding-left: 20px;
+.hire-btn {
+  padding-left: 20px;
 }
 /* About Me section end */
 
-
-
 /* Skills section start */
 
-.skills-title{
-    padding-top: 70px;
-    font-size: 35px;
-    font-weight: 600;
-    text-align: center;
-    padding-bottom: 50px;
-
+.skills-title {
+  padding-top: 70px;
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 50px;
 }
 
-
-.skills-images{
-    padding-left: 100px;
+.skills-images {
+  padding-left: 100px;
 }
 
 /* changing skills */
-.imgSkills{
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-    background-image: url(../../images/html.jpg);
+.imgSkills {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  background-image: url(../../images/html.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: change-img 10s infinite ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes change-img {
+  0% {
+    background-image: url(../../images/html.png);
+
+    background-size: cover;
+  }
+
+  20% {
+    background-image: url(../../images/css.png);
+
+    background-size: cover;
+  }
+  40% {
+    background-image: url(../../images/JS.png);
+
+    background-size: cover;
+  }
+  60% {
+    background-image: url(../../images/bootstrap.jpg);
+
+    background-size: cover;
+  }
+  80% {
+    background-image: url(../../images/figma.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    animation: change-img 10s infinite ease-in-out;
-    border-radius: 10px;
-
-}
-
-@keyframes change-img{
-    0%{
-        background-image: url(../../images/html.png);
-        
-    background-size: cover;
-    }
-
-    20%{
-        background-image: url(../../images/css.png);
-        
-    background-size: cover;
-    }
-    40%{
-        background-image: url(../../images/JS.png);
-        
-    background-size: cover;
-    }
-    60%{
-        background-image: url(../../images/bootstrap.jpg);
-        
-    background-size: cover;
-    }
-    80%{
-        background-image: url(../../images/figma.jpg);
-        background-position: center;
+  }
+  100% {
+    background-image: url(../../images/Bootstrap.png);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    }
-    100%{
-        background-image: url(../../images/Bootstrap.png);
-        background-position: center;
+  }
+  10% {
+    background-image: url(../../images/office.jpg);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    }
-    10%{
-        background-image: url(../../images/office.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-
-    }
+  }
 }
 
-.skills-content, .skills-images {
-    display: flex;
-    flex-direction: column;
-  }
-  
+.skills-content,
+.skills-images {
+  display: flex;
+  flex-direction: column;
+}
 
-  .skills-content {
-    max-width: 800px;
-  }  
+.skills-content {
+  max-width: 800px;
+}
 
-  .skills-content p{
-    font-size: 18px;
-    text-align: justify;
-    line-height: 35px;
-  }
+.skills-content p {
+  font-size: 18px;
+  text-align: justify;
+  line-height: 35px;
+}
 
 /*skills section end */
 
-
 /* education section start */
 
-#education{
-    padding-top: 40px;
+#education {
+  padding-top: 40px;
 }
 
-.qualification{
-    text-align: center;
-    font-size: 30px;
-    font-weight: 600;
-    padding-top: 40px;
+.qualification {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  padding-top: 40px;
 }
 
-.journey{
-    text-align: center;
-    font-size: 18px;
-    padding-bottom: 40px;
+.journey {
+  text-align: center;
+  font-size: 18px;
+  padding-bottom: 40px;
 }
-  .accomplishments {
-    display: flex;
-    flex-direction: row;
-    gap: 25px;
-    max-width: 100%;
-  }
-
-  .education-section, .experience-section {
-    flex: 0 0 50%;
-    max-width: 50%;
-    margin-bottom: 20px;
-  }
-
- 
-.row{
-    padding-top: 30px;
+.accomplishments {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  max-width: 100%;
 }
 
-.row  .timeline-box{
-    flex: 0 0  100%;
-    max-width: 100%;
-  }
-  
-
-  .row .timeline
-  {
-      background-color: white;
-      padding: 30px 15px;
-      border-radius: 10px;
-      width: 100%;
-     
-  }
- 
-
-  .timeline-item{
-    background-color: white;
-  }
-  .timeline-item{
-    background-color: white;
-  }
-#timeline{
-    background-color: white;
-}
-#item{
-    background-color: white;
+.education-section,
+.experience-section {
+  flex: 0 0 50%;
+  max-width: 50%;
+  margin-bottom: 20px;
 }
 
-  /* education and experience box - dots and line position */
-  .row .timeline .timeline-item
-  {
-      position: relative;
-      padding-left: 37px;
-      padding-bottom: 30px;
-  }
-
-   .row .timeline .timeline-item:last-child
-{
-    padding-bottom: 0;
-} 
-
-.row .timeline .timeline-item::before
-{
-    content: '';
-    width: 1px;
-    position: absolute;
-    height: 100%;
-    left: 7px;
-    top: 0;
-    background-color: orangered;
-}
-.row .timeline .circle-dot
-{
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    background-color: orangered;
-}
-.row .timeline .timeline-date .fa 
-{
-    margin-right: 5px;
-    font-size: 20px;
+.row {
+  padding-top: 30px;
 }
 
-  /* education and experience box - dots and line position */
-
-.row .timeline .timeline-date
-{
-    font-weight: 400;
-    font-size: 18px;
-    margin-bottom: 12px;
-    color: rgb(24, 23, 23);
+.row .timeline-box {
+  flex: 0 0 100%;
+  max-width: 100%;
 }
 
-
-.row .timeline .timeline-title
-{
-    font-weight: 700;
-    font-size: 18px;
-    margin-bottom: 15px;
-    text-transform: capitalize;
-    color: rgb(24, 23, 23);
-}
-.timeline-date i{
-    background-color: white;
-}
-#education > div > div.experience-section > div > div > div > div:nth-child(1) > h3{
-    background-color: white;
-}
-#education > div > div.experience-section > div > div > div > div:nth-child(2) > h3{
-    background-color: white;
-}
-#education > div > div.experience-section > div > div > div > div:nth-child(3) > h3{
-    background-color: white;
-}
-#education > div > div.experience-section > div > div > div > div:nth-child(1) > h5{
-    background-color: white;
-}
-#education > div > div.experience-section > div > div > div > div:nth-child(2) > h5{
-    background-color: white;
-}
-#education > div > div.experience-section > div > div > div > div:nth-child(3) > h5{
-    background-color: white;
+.row .timeline {
+  background-color: white;
+  padding: 30px 15px;
+  border-radius: 10px;
+  width: 100%;
 }
 
-#timeline > div:nth-child(1) > h3{
-    background-color: white;
+.timeline-item {
+  background-color: white;
 }
-#timeline > div:nth-child(2) > h3{
-    background-color: white;
+.timeline-item {
+  background-color: white;
 }
-#timeline > div:nth-child(3) > h3{
-    background-color: white;
+#timeline {
+  background-color: white;
 }
-
-#timeline > div:nth-child(1) > h5{
-    background-color: white;
-}
-#timeline > div:nth-child(2) > h5{
-    background-color: white;
-}
-#timeline > div:nth-child(3) > h5{
-    background-color: white;
-}
-.timeline-title{
-    background-color: white;
+#item {
+  background-color: white;
 }
 
-.timeline-title h5{
-    background-color: white;
+/* education and experience box - dots and line position */
+.row .timeline .timeline-item {
+  position: relative;
+  padding-left: 37px;
+  padding-bottom: 30px;
 }
 
-.row .timeline .timeline-text
-{
-    line-height: 25px;
-    font-size: 16px;
-    text-align: justify;
-    color: rgb(43, 42, 42);
-    background-color: white;
+.row .timeline .timeline-item:last-child {
+  padding-bottom: 0;
 }
 
+.row .timeline .timeline-item::before {
+  content: "";
+  width: 1px;
+  position: absolute;
+  height: 100%;
+  left: 7px;
+  top: 0;
+  background-color: orangered;
+}
+.row .timeline .circle-dot {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: orangered;
+}
+.row .timeline .timeline-date .fa {
+  margin-right: 5px;
+  font-size: 20px;
+}
 
+/* education and experience box - dots and line position */
+
+.row .timeline .timeline-date {
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: rgb(24, 23, 23);
+}
+
+.row .timeline .timeline-title {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+  color: rgb(24, 23, 23);
+}
+.timeline-date i {
+  background-color: white;
+}
+#education
+  > div
+  > div.experience-section
+  > div
+  > div
+  > div
+  > div:nth-child(1)
+  > h3 {
+  background-color: white;
+}
+#education
+  > div
+  > div.experience-section
+  > div
+  > div
+  > div
+  > div:nth-child(2)
+  > h3 {
+  background-color: white;
+}
+#education
+  > div
+  > div.experience-section
+  > div
+  > div
+  > div
+  > div:nth-child(3)
+  > h3 {
+  background-color: white;
+}
+#education
+  > div
+  > div.experience-section
+  > div
+  > div
+  > div
+  > div:nth-child(1)
+  > h5 {
+  background-color: white;
+}
+#education
+  > div
+  > div.experience-section
+  > div
+  > div
+  > div
+  > div:nth-child(2)
+  > h5 {
+  background-color: white;
+}
+#education
+  > div
+  > div.experience-section
+  > div
+  > div
+  > div
+  > div:nth-child(3)
+  > h5 {
+  background-color: white;
+}
+
+#timeline > div:nth-child(1) > h3 {
+  background-color: white;
+}
+#timeline > div:nth-child(2) > h3 {
+  background-color: white;
+}
+#timeline > div:nth-child(3) > h3 {
+  background-color: white;
+}
+
+#timeline > div:nth-child(1) > h5 {
+  background-color: white;
+}
+#timeline > div:nth-child(2) > h5 {
+  background-color: white;
+}
+#timeline > div:nth-child(3) > h5 {
+  background-color: white;
+}
+.timeline-title {
+  background-color: white;
+}
+
+.timeline-title h5 {
+  background-color: white;
+}
+
+.row .timeline .timeline-text {
+  line-height: 25px;
+  font-size: 16px;
+  text-align: justify;
+  color: rgb(43, 42, 42);
+  background-color: white;
+}
 
 /* media quiries */
-@media (max-width: 600px){
-    .accomplishments{
-        flex-direction: column;
-        max-width: 100%;
-      }
-
+@media (max-width: 600px) {
+  .accomplishments {
+    flex-direction: column;
+    max-width: 100%;
   }
-  @media (min-width: 601px){
-    
-  }
+}
+@media (min-width: 601px) {
+}
 
 @media (max-width: 768px) {
-    .accomplishments{
-      flex-direction: column;
-      max-width: 100%;
-    }
+  .accomplishments {
+    flex-direction: column;
+    max-width: 100%;
+  }
 
-    .about-image, .content{
-        width: 100%;
-    }
-   .profession{
+  .about-image,
+  .content {
+    width: 100%;
+  }
+  .profession {
     font-size: 20px;
-   }
-    .about-image{
-        margin-bottom:30px ;
-    }
-    
   }
-
-  @media (max-width: 576px){
-    .education-section, .experience-section, .about-image{
-        flex: 100%;;
-        max-width: 100%;
-    }
+  .about-image {
+    margin-bottom: 30px;
   }
-@media(min-width:576px){
-    #education, #timeline, .row{
-        max-width: 100%;
-    }
-}
-  /* Media quiries */
-  @media (max-width:767px)
-{
-    
-    .education-section, .experience-section, 
-    .timeline-box, #timeline, .row 
-    {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-
-    .skills-content{
-        padding-left: 25px;
-    }
-    .title, .timeline-box{
-        padding-left: 20px;
-    }
-
-    
 }
 
-  @media (min-width: 768px) {
-    .timeline-box, #timeline, .row {
-      width: 100%; /* Make the timeline boxes take up 50% of the container */
-    
-    }
+@media (max-width: 576px) {
+  .education-section,
+  .experience-section,
+  .about-image {
+    flex: 100%;
+    max-width: 100%;
   }
+}
+@media (min-width: 576px) {
+  #education,
+  #timeline,
+  .row {
+    max-width: 100%;
+  }
+}
+/* Media quiries */
+@media (max-width: 767px) {
+  .education-section,
+  .experience-section,
+  .timeline-box,
+  #timeline,
+  .row {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .skills-content {
+    padding-left: 25px;
+  }
+  .title,
+  .timeline-box {
+    padding-left: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .timeline-box,
+  #timeline,
+  .row {
+    width: 100%; /* Make the timeline boxes take up 50% of the container */
+  }
+}

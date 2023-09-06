@@ -1,13 +1,10 @@
-import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import "./contact.css";
 import { Container } from "react-bootstrap";
 import { useState } from "react";
 import contact1 from "../../images/contact1.png";
 import ReCAPTCHA from "react-google-recaptcha";
-
-
-
 
 const Contact = () => {
   // contact form
@@ -49,7 +46,6 @@ const Contact = () => {
     return validationErrors;
   };
 
- 
   // google reCapctcha function
   const [googleCaptcha, setGoogleCaptcha] = useState(null);
 
@@ -60,13 +56,22 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_fifserf', 'template_yqbddze', form.current, 'gnmTeRAYIuMI3oPr4')
-      .then((result) => {
+    emailjs
+      .sendForm(
+        "service_fifserf",
+        "template_yqbddze",
+        form.current,
+        "gnmTeRAYIuMI3oPr4"
+      )
+      .then(
+        (result) => {
           console.log(result.text);
-          console.log("message sent successfully")
-      }, (error) => {
+          console.log("message sent successfully");
+        },
+        (error) => {
           console.log(error.text);
-      });
+        }
+      );
   };
 
   const handleSubmit = (e) => {
@@ -74,7 +79,7 @@ const Contact = () => {
     const validationErrors = validateForm();
     setErrors(validationErrors);
 
-    if (Object.keys(validationErrors).length === 0) { 
+    if (Object.keys(validationErrors).length === 0) {
       alert("Message submitted successfully");
       setFormData(initialFormData);
 
@@ -82,7 +87,6 @@ const Contact = () => {
       sendEmail(e);
     }
   };
-  
 
   return (
     <Container className="container-fluid  contact-section" id="contact">
@@ -99,15 +103,14 @@ const Contact = () => {
                 </div>
                 <div className="flipImg-box-back">
                   <p>
-                    Im very responsive to messages <br />{" "}
-                    <span>😊</span>
+                    Im very responsive to messages <br /> <span>😊</span>
                   </p>
                 </div>
               </div>
             </div>
           </div>
 
-          <form  ref={form} onSubmit={handleSubmit} className="right">
+          <form ref={form} onSubmit={handleSubmit} className="right">
             <div>
               <input
                 type="text"
@@ -158,7 +161,6 @@ const Contact = () => {
             </div>
             <ReCAPTCHA
               sitekey="6LfPb-MnAAAAAIcqD6LGgxKJ44a_Knfx-ZipmtSk"
-              
               onChange={(val) => setGoogleCaptcha(val)}
             />
             <button disabled={!googleCaptcha} type="submit" className="button">

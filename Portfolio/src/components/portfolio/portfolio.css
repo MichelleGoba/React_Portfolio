@@ -1,59 +1,52 @@
-/* *{
-  background-color: rgb(238, 168, 142);
-} */
-.portfolio-section{
-  padding-top: 40px;
+
+.portfolio-section {
+  padding-top: 70px;
 }
-.portfolio-section .title{
+
+.portfolio-section .title {
   text-align: center;
 }
 
-.portfolio-section h4{
-  padding-top: 40px;
- text-align: center;
+.portfolio-section h4 {
+  padding-top: 20px;
+  text-align: center;
 }
 
-.portfolio{  
+.portfolio {
   padding-top: 40px;
   display: flex;
   flex-wrap: wrap;
-justify-content: space-between;
-align-items: center;
-margin: 20px 0px;
-
-}  
-
-.projects{
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
-    color: rgb(102, 98, 98);
-    box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
-    
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0px;
 }
 
-.projects p{
+.projects {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  color: rgb(102, 98, 98);
+  box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+}
+
+.projects p {
   text-align: center;
   font-size: x-large;
-
 }
-.p-img{
+.p-img {
   height: 250px;
   width: 100%;
   border-radius: 5px;
-  transform: all .5s ease-in-out;
-}
-#p3{
-  
+  transform: all 0.5s ease-in-out;  /* apply moving transformation to the images */
 }
 
-/* initially the paragraph is hidden */
+/* initially, the project paragraph is hidden */
 .p-img-box .description {
-  font-size: 16px ;
+  font-size: 16px;
   display: none;
 }
 
@@ -62,68 +55,58 @@ margin: 20px 0px;
   display: block;
 }
 
-.projects a{
+.projects a {
   padding-top: 10px;
   text-align: center;
-
 }
 
 
+/* Media quiries */
 
-  @media (max-width:991px)
-  {   
-      .portfolio .portfolio-item
-      
-      {
-          flex: 0 0 50%;
-          max-width: 100%;
-      }    
+@media (max-width: 991px) {
+  .portfolio .portfolio-item {
+    flex: 0 0 50%;
+    max-width: 100%;
   }
-
-  
-  @media (max-width: 768px) {
-    .projects, .p-img {
-      width: 100%;
-      max-width: 500px;
-    }
-  }
-
-
-  @media (max-width:767px)
-{
-    
-    .portfolio .portfolio-item, .p-img
-   
-    {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
 }
-  @media only screen and (max-width: 600px) {
-    
-    .portfolio {
-      /* flex-direction: column; */
-      width: 100%;
-    }
-    .projects {
-      width: 100%;
-    }
 
-    .card {
-        width: 60%;
-        height: 250px;
-    }
-  
+@media (max-width: 768px) {
+  .projects,
+  .p-img {
+    width: 100%;
+    max-width: 500px;
   }
-  
-  @media (max-width:450px){
-  
-    .projects, .p-img {
-      display: grid;
-      flex-direction: column;
-      width: 100%;
-      justify-content: center;
-      align-items: center;
-    }
-  
+}
+
+@media (max-width: 767px) {
+  .portfolio .portfolio-item,
+  .p-img {
+    flex: 0 0 100%;
+    max-width: 100%;
   }
+}
+@media only screen and (max-width: 600px) {
+  .portfolio {
+    flex-direction: column;
+    width: 100%;
+  }
+  .projects {
+    width: 100%;
+  }
+
+  .card {
+    width: 60%;
+    height: 250px;
+  }
+}
+
+@media (max-width: 450px) {
+  .projects,
+  .p-img {
+    display: grid;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
