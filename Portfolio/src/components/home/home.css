@@ -59,6 +59,10 @@ body {
   }
 }
 
+.my-name{
+  font-size: 50px;
+}
+
 .my-name span {
   font-size: 60px;
   color: #f24e1e;
@@ -200,16 +204,10 @@ body {
 }
 
 .image-container {
-  height: 100%;
-  width: 500px;
+  width: 550px;
 }
 
-.home-img {
-  height: 440px;
-  width: 600px;
-  margin: 10px;
-  padding-left: 40px;
-}
+
 
 /* media quiries */
 
