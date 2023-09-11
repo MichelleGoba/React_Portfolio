@@ -25,7 +25,7 @@ const Home = () => {
             I'm <span>M</span>ichelle
           </div>
           <h3 className="my-profession">
-            Im a <span id="profession">{typrEffect}</span>
+            I'm a <span id="profession">{typrEffect}</span>
           </h3>
           <p>
             I am a Junior Software Developer from Cape Town who is learning how
