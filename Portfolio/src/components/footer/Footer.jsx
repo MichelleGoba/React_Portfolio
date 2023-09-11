@@ -48,9 +48,12 @@ const Footer = () => {
 
           {/* icons div start */}
           <div className="col-md-4 mb-md-0 mb-3" id="icons">
-
             <div className="icon instagram">
-              <a href="https://www.instagram.com/michelle_goba_/" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.instagram.com/michelle_goba_/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <span>
                   <FontAwesomeIcon icon={faInstagram} />
                 </span>
@@ -58,7 +61,11 @@ const Footer = () => {
             </div>
 
             <div className="icon linkedin">
-              <a href="https://www.linkedin.com/in/michelle-goba-12955ba2/" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.linkedin.com/in/michelle-goba-12955ba2/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <div className="tooltip">Linkedin</div>
                 <span>
                   <FontAwesomeIcon icon={faLinkedin} />
@@ -67,7 +74,11 @@ const Footer = () => {
             </div>
 
             <div className="icon github">
-              <a href="https://github.com/MichelleGoba" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://github.com/MichelleGoba"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <span>
                   <FontAwesomeIcon icon={faGithub} className="footer-icon" />
                 </span>
