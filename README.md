@@ -33,12 +33,15 @@ $ npm install
 $ npm run dev
 ```
 
-This will start webpack-dev-server and enable hot reloading. Then  visit:
+To access the project using firebase
+ $ cd Portfolio
+ $ firebase deploy
+
+To access the project visit:
 
 ```
-http://localhost:
+Hosting URL: https://michellegoba-online-portfolio.web.app
 
-Click on the local lhost that will be visible on the terminal to view the project.
 ```
 
 
