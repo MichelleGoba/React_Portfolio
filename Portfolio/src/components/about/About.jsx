@@ -90,6 +90,63 @@ const About = () => {
           <p className="qualification">Qualifications</p>
           <p className="journey">My personal journey</p>
           <div className="accomplishments">
+
+          <div className="experience-section">
+              <h3 className="title">Experience</h3>
+              <div className="row">
+                {/* Timeline Box */}
+                <div className="timeline-box ">
+                  <div className="timeline shadow-dark">
+                    {/* <!-- ===== timeline item start===== --> */}
+                    <div className="timeline-item">
+                      <div className="circle-dot"></div>
+                      <h3 className="timeline-date">
+                        <i className="fa fa-calendar"></i> July - Current
+                      </h3>
+                      <h4 className="timeline-title">Younglings Africa</h4>
+                      <h5>Junior Software Developer</h5>
+                      <p className="timeline-text">
+                        Im responsible for building, developing, and maintaining
+                        websites using HTML, CSS, and JavaScript, and
+                        implementing front-end logic to govern the behavior of
+                        visual elements in web applications.
+                      </p>
+                    </div>
+                    {/* <!-- ===== timeline item end===== --> */}
+                    {/* <!-- ===== timeline item start===== --> */}
+                    <div className="timeline-item">
+                      <div className="circle-dot"></div>
+                      <h3 className="timeline-date">
+                        <i className="fa fa-calendar"></i> 2023 - Current
+                      </h3>
+                      <h4 className="timeline-title">UVU Africa</h4>
+                      <h5>Software Development Intern</h5>
+                      <p className="timeline-text">
+                        Worked on projects that developed websites and
+                        applications that allowed learners, teachers, and
+                        parents to access any school related information on any
+                        device.
+                      </p>
+                    </div>
+                    {/* <!-- ===== timeline item ===== --> */}
+                   
+                    {/* <!-- ===== timeline item ===== --> */}
+                    <div className="timeline-item">
+                      <div className="circle-dot"></div>
+                      <h3 className="timeline-date">
+                        <i className="fa fa-calendar"></i> 2018 - 2018
+                      </h3>
+                      <h4 className="timeline-title">CPUT</h4>
+                      <h5>Teaching Assistant</h5>
+                      <p className="timeline-text">
+                      - Assisted students with troubleshooting within ArcMap. <br/>
+                      - Supported the students with their map making procedures and assignments
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div className="education-section ">
               <h3 className="title">Education</h3>
               <div className="row">
@@ -147,78 +204,7 @@ const About = () => {
               </div>
             </div>
 
-            <div className="experience-section">
-              <h3 className="title">Experience</h3>
-              <div className="row">
-                {/* Timeline Box */}
-                <div className="timeline-box ">
-                  <div className="timeline shadow-dark">
-                    {/* <!-- ===== timeline item start===== --> */}
-                    <div className="timeline-item">
-                      <div className="circle-dot"></div>
-                      <h3 className="timeline-date">
-                        <i className="fa fa-calendar"></i> July - Current
-                      </h3>
-                      <h4 className="timeline-title">Younglings Africa</h4>
-                      <h5>Junior Software Developer</h5>
-                      <p className="timeline-text">
-                        Im responsible for building, developing, and maintaining
-                        websites using HTML, CSS, and JavaScript, and
-                        implementing front-end logic to govern the behavior of
-                        visual elements in web applications.
-                      </p>
-                    </div>
-                    {/* <!-- ===== timeline item end===== --> */}
-                    {/* <!-- ===== timeline item start===== --> */}
-                    <div className="timeline-item">
-                      <div className="circle-dot"></div>
-                      <h3 className="timeline-date">
-                        <i className="fa fa-calendar"></i> 2023 - Current
-                      </h3>
-                      <h4 className="timeline-title">UVU Africa</h4>
-                      <h5>Software Development Intern</h5>
-                      <p className="timeline-text">
-                        Worked on projects that developed websites and
-                        applications that allowed learners, teachers, and
-                        parents to access any school related information on any
-                        device.
-                      </p>
-                    </div>
-                    {/* <!-- ===== timeline item ===== --> */}
-                    <div className="timeline-item">
-                      <div className="circle-dot"></div>
-                      <h3 className="timeline-date">
-                        <i className="fa fa-calendar"></i> 2021 - 2022
-                      </h3>
-                      <h4 className="timeline-title">
-                        Steam House Engineering
-                      </h4>
-                      <h5>Safety Officer</h5>
-                      <p className="timeline-text">
-                        I was in charge of assuring the company's total
-                        compliance with safety, health, and environmental laws,
-                        regulations, policies, procedures, and legislation in
-                        the past.
-                      </p>
-                    </div>
-                    {/* <!-- ===== timeline item ===== -->
-                                    <!-- ===== timeline item ===== --> */}
-                    <div className="timeline-item">
-                      <div className="circle-dot"></div>
-                      <h3 className="timeline-date">
-                        <i className="fa fa-calendar"></i> 2018 - 2018
-                      </h3>
-                      <h4 className="timeline-title">CPUT</h4>
-                      <h5>Teaching Assistant</h5>
-                      <p className="timeline-text">
-                        Assisted 35 students with Environmental Impact
-                        Assessment assignments.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+           
           </div>
         </Container>
       </Container>
