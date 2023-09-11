@@ -25,7 +25,7 @@ const Portfolio = () => {
               contact information.
             </p>
           </div>
-          <a href="https://github.com/MichelleGoba/Mzamomtsha-Primary-School-Website">
+          <a href="https://github.com/MichelleGoba/Mzamomtsha-Primary-School-Website" target="_blank" rel="noopener noreferrer">
             <button className="btn">Go to Project</button>
           </a>
         </div>
@@ -37,7 +37,7 @@ const Portfolio = () => {
               about the services that Ndalo's entertainment provides.
             </p>
           </div>
-          <a href="https://github.com/MichelleGoba/Ndalo">
+          <a href="https://github.com/MichelleGoba/Ndalo" target="_blank" rel="noopener noreferrer" >
             <button className="btn">Go to Project</button>
           </a>
         </div>
@@ -51,7 +51,7 @@ const Portfolio = () => {
               device, anytime and from anywhere.
             </p>
           </div>
-          <a href="https://github.com/MichelleGoba/Banking-Application">
+          <a href="https://github.com/MichelleGoba/Banking-Application" target="_blank" rel="noopener noreferrer">
             <button className="btn">Go to Project</button>
           </a>
         </div>
