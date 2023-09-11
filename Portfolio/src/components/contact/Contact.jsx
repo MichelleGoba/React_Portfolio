@@ -1,4 +1,4 @@
-// import React, { useRef } from "react";
+import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "./contact.css";
 import { Container } from "react-bootstrap";
@@ -7,7 +7,7 @@ import contact1 from "../../images/contact1.png";
 import ReCAPTCHA from "react-google-recaptcha";
 
 const Contact = () => {
-  // contact form function
+  // contact form
   const initialFormData = {
     name: "",
     email: "",
@@ -80,12 +80,13 @@ const Contact = () => {
     const validationErrors = validateForm();
     setErrors(validationErrors);
 
-    if (!googleCaptcha) {
+
+    if(!googleCaptcha){
       setRecaptchaValid(false);
-    } else {
+    }else{
       setRecaptchaValid(true);
     }
-
+    
     if (Object.keys(validationErrors).length === 0 && recaptchaValid) {
       alert("Message submitted successfully");
       setFormData(initialFormData);
@@ -128,9 +129,7 @@ const Contact = () => {
                 onChange={handleChange}
                 value={formData.name}
               ></input>
-              {errors.name && (
-                <span style={{ color: "red" }}>{errors.name}</span>
-              )}
+              {errors.name && <span style={{ color: "red" }}>{errors.name}</span>}
             </div>
             <div>
               <input
@@ -142,9 +141,7 @@ const Contact = () => {
                 onChange={handleChange}
                 value={formData.email}
               ></input>
-              {errors.email && (
-                <span style={{ color: "red" }}>{errors.email}</span>
-              )}
+              {errors.email && <span style={{ color: "red" }}>{errors.email}</span>}
             </div>
             <div>
               <input
@@ -156,6 +153,7 @@ const Contact = () => {
                 onChange={handleChange}
                 value={formData.subject}
               ></input>
+      
             </div>
             <div>
               <textarea
@@ -167,25 +165,24 @@ const Contact = () => {
                 onChange={handleChange}
                 value={formData.message}
               ></textarea>
-              {errors.message && (
-                <span style={{ color: "red" }}>{errors.message}</span>
-              )}
+              {errors.message && <span style={{ color: "red" }}>{errors.message}</span>}
             </div>
 
             <ReCAPTCHA
               sitekey="6LfPb-MnAAAAAIcqD6LGgxKJ44a_Knfx-ZipmtSk"
               onChange={(val) => {
                 setGoogleCaptcha(val);
-                setRecaptchaValid(true); //reset the validation when the reCaptcha changes
-              }}
-            />
-            {!recaptchaValid && (
+                setRecaptchaValid(true);  //reset the validation when the reCaptcha changes
+            }}
+            /> 
+                        {!recaptchaValid && (
               <span style={{ color: "red" }}>
                 Please verify that you are not a robot.
               </span>
             )}
 
-            <button type="submit" className="button">
+
+            <button  type="submit" className="button">
               Submit
             </button>
           </form>

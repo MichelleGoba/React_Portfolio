@@ -9,6 +9,7 @@ import CV from "../../images/Michelle Goba_CV.pdf";
 const About = () => {
   return (
     <Container className="container-fluid  about-section" id="about">
+      {/* <h2 className="title">About Me</h2> */}
       <Row>
         {/*about image start*/}
         <Col xs={12} md={6} w-100 className="about-image">
@@ -49,13 +50,7 @@ const About = () => {
 
           <div className="abt-buttons">
             <div className="download-btn">
-              <a
-                href={CV}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn"
-                id="download-btn"
-              >
+              <a href={CV} target="_blank" rel="noopener noreferrer" className="btn" id="download-btn">
                 Download CV
               </a>
             </div>
@@ -95,7 +90,8 @@ const About = () => {
           <p className="qualification">Qualifications</p>
           <p className="journey">My personal journey</p>
           <div className="accomplishments">
-            <div className="experience-section">
+
+          <div className="experience-section">
               <h3 className="title">Experience</h3>
               <div className="row">
                 {/* Timeline Box */}
@@ -133,7 +129,7 @@ const About = () => {
                       </p>
                     </div>
                     {/* <!-- ===== timeline item ===== --> */}
-
+                   
                     {/* <!-- ===== timeline item ===== --> */}
                     <div className="timeline-item">
                       <div className="circle-dot"></div>
@@ -143,9 +139,8 @@ const About = () => {
                       <h4 className="timeline-title">CPUT</h4>
                       <h5>Teaching Assistant</h5>
                       <p className="timeline-text">
-                        - Assisted students with troubleshooting within ArcMap.{" "}
-                        <br />- Supported the students with their map making
-                        procedures and assignments
+                      - Assisted students with troubleshooting within ArcMap. <br/>
+                      - Supported the students with their map making procedures and assignments
                       </p>
                     </div>
                   </div>
@@ -155,6 +150,7 @@ const About = () => {
             <div className="education-section ">
               <h3 className="title">Education</h3>
               <div className="row">
+                {/* <!-- ===== timeline item start ===== --> */}
                 <div className="timeline-box ">
                   <div className="timeline shadow-dark" id="timeline">
                     {/* <!-- ===== timeline item start ===== --> */}
@@ -175,7 +171,7 @@ const About = () => {
                     </div>
                     {/* <!-- ===== timeline item end ===== --> */}
 
-                    {/* <!-- ===== timeline item start ===== --> */}
+                    {/* <!-- ===== timeline item end ===== --> */}
                     <div className="timeline-item">
                       <div className="circle-dot"></div>
                       <h3 className="timeline-date">
@@ -189,9 +185,7 @@ const About = () => {
                         and environmental management systems.
                       </p>
                     </div>
-                    {/* <!-- ===== timeline item end ===== --> */}
-
-                    {/* <!-- ===== timeline item start ===== --> */}
+                    {/* <!-- ===== timeline item ===== --> */}
                     <div className="timeline-item">
                       <div className="circle-dot"></div>
                       <h3 className="timeline-date">
@@ -205,11 +199,12 @@ const About = () => {
                         and environmental management systems.
                       </p>
                     </div>
-                    {/* <!-- ===== timeline item end ===== --> */}
                   </div>
                 </div>
               </div>
             </div>
+
+           
           </div>
         </Container>
       </Container>
