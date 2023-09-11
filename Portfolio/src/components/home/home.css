@@ -23,7 +23,7 @@ body {
   font-size: 60px;
 }
 
-/* greeing span start*/
+/* greeting span start*/
 .greeting .wave {
   animation-duration: 2.5s; /* Hand speed */
   animation-iteration-count: infinite; /* Hand does stop waving :) */
@@ -111,7 +111,7 @@ body {
 /* social icons start */
 
 .social-icons {
-  padding-top: 25 +px;
+  padding-top: 25px;
   display: inline-flex;
 }
 
@@ -217,10 +217,23 @@ body {
 @media (max-width: 600px) {
   .greeting {
     font-size: 30px;
+    font-weight: 700;
   }
   .my-profession {
     font-size: 20px;
     font-weight: 500;
+  }
+  .my-name{
+    font-size: 25px;
+    font-weight: 700;
+  }
+
+  .my-name span{
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .social-icons {
+    padding-top: 40px;
   }
   .home-img {
     height: 100%;

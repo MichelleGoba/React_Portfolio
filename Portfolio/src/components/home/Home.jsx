@@ -21,7 +21,9 @@ const Home = () => {
           <h1 className="greeting">
             Hello! <span className="wave">👋</span>
           </h1>
-          <div className="my-name">I'm <span>M</span>ichelle</div>
+          <div className="my-name">
+            I'm <span>M</span>ichelle
+          </div>
           <h3 className="my-profession">
             Im a <span id="profession">{typrEffect}</span>
           </h3>
@@ -35,7 +37,11 @@ const Home = () => {
           <div className="social-icons">
             <div className="icon instagram">
               <div className="tooltip">Instagram</div>
-              <a href='https://www.instagram.com/michelle_goba_/' target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.instagram.com/michelle_goba_/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <span>
                   <i className="fab fa-instagram"></i>
                 </span>
@@ -43,7 +49,11 @@ const Home = () => {
             </div>
             <div className="icon linkedin">
               <div className="tooltip">Linkedin</div>
-              <a href="https://www.linkedin.com/in/michelle-goba-12955ba2/" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.linkedin.com/in/michelle-goba-12955ba2/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <span>
                   <i className="fab fa-linkedin"></i>
                 </span>
@@ -51,7 +61,11 @@ const Home = () => {
             </div>
             <div className="icon github">
               <div className="tooltip">Github</div>
-              <a href="https://github.com/MichelleGoba" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://github.com/MichelleGoba"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <span>
                   <i className="fab fa-github"></i>
                 </span>
