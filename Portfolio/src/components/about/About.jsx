@@ -4,7 +4,7 @@ import aboutImage from "../../images/abt-img.png";
 import "./about.css";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import CV from "../../images/Michelle Goba_CV.pdf";
+import CV from "../../images/Michelle_CV.pdf";
 
 const About = () => {
   return (
