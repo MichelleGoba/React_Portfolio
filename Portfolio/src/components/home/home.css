@@ -217,6 +217,14 @@ body {
 @media (max-width: 600px) {
   .greeting {
     font-size: 30px;
+    font-weight: 600;
+  }
+  .my-name{
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .my-name span{
+    font-size: 25px;
   }
   .my-profession {
     font-size: 20px;
