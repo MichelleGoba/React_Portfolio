@@ -7,7 +7,7 @@ body {
   background-color: #fbe9e56c;
 }
 .home-section {
-  padding-top: 100px;
+  padding-top: 70px;
 }
 
 .row {
@@ -115,6 +115,7 @@ body {
   display: inline-flex;
 }
 
+
 .social-icons .icon {
   margin: 0 8px;
   display: flex;
@@ -166,7 +167,14 @@ body {
   opacity: 1;
   pointer-events: auto;
 }
+.fa-instagram:before {
 
+  padding-left: 2px;
+}
+
+.fa-linkedin:before {
+  padding-left: 2px;
+}
 
 /* icon arrow start*/
 .social-icons .icon .tooltip::before {
@@ -213,11 +221,21 @@ body {
 
 
 /* media quiries */
+/* 
+@media (max-width: 767px){
+  .container-fluid {
+    padding: 10;
+}
+} */
+
+
 
 @media (max-width: 600px) {
+
   .greeting {
     font-size: 30px;
     font-weight: 600;
+   
   }
   .my-name{
     font-size: 25px;
@@ -231,8 +249,9 @@ body {
     font-weight: 500;
   }
   .home-img {
-    height: 100%;
-    width: 100%;
+    display: none;
+    /* height: 100%;
+    width: 100%; */
   }
   .image-container {
     padding-top: 50px;
@@ -252,6 +271,11 @@ body {
   .my-profession {
     font-size: 25px;
     font-weight: 500;
+  }
+
+  .image-container{
+    width:450px;
+    height: 500px;
   }
   .home-img {
     height: 100%;

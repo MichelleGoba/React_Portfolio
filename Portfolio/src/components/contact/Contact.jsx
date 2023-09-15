@@ -103,20 +103,7 @@ const Contact = () => {
 
       <div className="contact-container">
         <div className="contact-box">
-          <div className="left">
-            <div className="flipImg-box">
-              <div className="flipImg-box-inner">
-                <div className="flipImg-box-front">
-                  <img src={contact1} className="cnt-img" />
-                </div>
-                <div className="flipImg-box-back">
-                  <p>
-                    Im very responsive to messages <br /> <span>😊</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+          
 
           <form ref={form} onSubmit={handleSubmit} className="right">
             <div>
@@ -186,6 +173,20 @@ const Contact = () => {
               Submit
             </button>
           </form>
+          <div className="left">
+            <div className="flipImg-box">
+              <div className="flipImg-box-inner">
+                <div className="flipImg-box-front">
+                  <img src={contact1} className="cnt-img" />
+                </div>
+                <div className="flipImg-box-back">
+                  <p>
+                    Im very responsive to messages <br /> <span>😊</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </Container>

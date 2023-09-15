@@ -5,6 +5,7 @@
 
 .portfolio-section .title {
   text-align: center;
+  font-weight: 700;
 }
 
 .portfolio-section h4 {
@@ -27,7 +28,7 @@
   flex-direction: column;
   width: 30%;
   padding: 10px;
-  margin: 10px;
+  /* margin: 10px; */
   border-radius: 10px;
   color: rgb(102, 98, 98);
   box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
@@ -41,7 +42,7 @@
   height: 250px;
   width: 100%;
   border-radius: 5px;
-  transform: all 0.5s ease-in-out;  /* apply moving transformation to the images */
+  transform: all 0.10s ease-in-out;  /* apply moving transformation to the images */
 }
 
 /* initially, the project paragraph is hidden */
@@ -53,6 +54,7 @@
 /* Show the paragraph when hovering over p-img-box */
 .p-img-box:hover .description {
   display: block;
+  padding-top: 10px;
 }
 
 .projects a {

@@ -14,6 +14,7 @@
 .contact-section .title {
   padding-top: 30px;
   text-align: center;
+  font-weight: 700;
 }
 
 .contact-section h4 {
@@ -63,7 +64,7 @@
 
 .cnt-img {
   width: 370px;
-  padding-top: 90px;
+  padding-top: 50px;
 }
 textarea {
   height: 200px;
@@ -89,8 +90,8 @@ textarea {
 }
 
 .flipImg-box-front {
-  padding-left: 40px;
-  padding-top: 20px;
+  padding-left: 20px;
+  
 }
 
 .flipImg-box-back {
@@ -135,8 +136,30 @@ textarea {
   .flip-box-back,
   .flip-box-inner,
   .cnt-img {
-    height: 400px;
+    height: 350px;
     width: 100%;
   }
 }
 
+@media (min-width:881px){
+  .cnt-img{
+    width: 100%;
+    padding-right: 20px;
+  }
+}
+@media (max-width:375px) {
+  .contact-box {
+    /* grid-template-columns: 1fr; */
+    
+  }
+  .left,
+  .flip-box,
+  .flip-box-front,
+  .flip-box-back,
+  .flip-box-inner,
+  .cnt-img {
+    height: 350px;
+    width: 100%;
+  }
+  
+}

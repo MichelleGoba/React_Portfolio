@@ -43,7 +43,7 @@ const Header = () => {
                 Skills
               </NavDropdown.Item>
               <NavDropdown.Item href="#education" className="dropdown" onClick={handleNavLinkClick}>
-                Education
+                Qualifications
               </NavDropdown.Item>
             </NavDropdown>
             {/* Nav links */}

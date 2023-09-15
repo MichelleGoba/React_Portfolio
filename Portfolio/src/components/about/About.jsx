@@ -9,7 +9,7 @@ import CV from "../../images/Michelle_CV.pdf";
 const About = () => {
   return (
     <Container className="container-fluid  about-section" id="about">
-      {/* <h2 className="title">About Me</h2> */}
+      <h2 className="abt-title" id="">About Me</h2> 
       <Row>
         {/*about image start*/}
         <Col xs={12} md={6} w-100 className="about-image">
@@ -22,7 +22,7 @@ const About = () => {
           <h3 className="profession">Im a Junior Software Developer</h3>
           <p>
             I am a self-driven and highly motivated individual. Exceptionally
-            good at handling pressure, picking up new concepts quickly, and
+            good at handling pressure, picking up new concepts quickly, andP
             effectively communicating ideas. I have been progressively exposed
             to theoretical and practical knowledge in Software Development,
             Environmental Health and Safety and Geographic Information Systems.

@@ -10,10 +10,18 @@
   padding-top: 100px;
 }
 
-.title {
+.abt-title {
   font-weight: 700;
+  text-align: center;
+  padding-top: 30px;
 }
+.abt-row{
+  padding-top: 30px;
+}
+
+
 .profession {
+  padding-top: 50px;
   font-size: 25px;
   font-weight: 600;
   color: orangered;
@@ -22,33 +30,11 @@
   font-size: 18px;
   line-height: 30px;
 }
-/* .about-title::before{
-    content: '';
-    height:4px;
-    width: 50px;
-    background-color: orangered;
-    position: absolute;
-    top: 100%;
-    left: 0;
- }
 
-.about-title::after{
-    content: '';
-    height: 4px;
-    width: 25px;
-    background-color: crimson;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    margin-top: 8px;
-} */
-
-#about-image {
-  height: 400px;
-  padding-left: 50px;
-  padding-top: 30px;
-  width: 500px;
+.about-image{
+  padding-top: 50px;
 }
+
 .personal-info {
   padding-top: 10px;
 }
@@ -387,6 +373,10 @@
     max-width: 100%;
   }
 
+  .abt-title{
+    padding-top: 10px;
+  }
+
   .about-image,
   .content {
     width: 100%;
@@ -397,6 +387,7 @@
   .about-image {
     margin-bottom: 30px;
   }
+
 }
 
 @media (max-width: 576px) {
@@ -423,6 +414,21 @@
   .row {
     flex: 0 0 100%;
     max-width: 100%;
+  }
+
+  /* .about-section{
+    padding-top: 60px;
+  } */
+
+  
+  .profession{
+    padding-top: 10px;
+  }
+
+  .about-image{
+    width: 80%;
+    margin-left: 50px;
+    
   }
 
   .skills-content {

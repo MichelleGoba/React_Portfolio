@@ -15,7 +15,7 @@
 }
 
 #copyright {
-  padding-left: 130px;
+  padding-left: 80px;
   padding-right: 95;
   background-color: #fed2c8;
   padding-top: 30px;
@@ -147,13 +147,6 @@
 
 /* logo end */
 
-/* For Desktop View */
-@media screen and (min-width: 1024px) {
-}
-
-/* For Tablet view */
-@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-}
 
 /* For Mobile Portrait View */
 @media screen and (max-device-width: 480px) and (orientation: portrait) {
@@ -169,11 +162,11 @@
 
 @media (max-width: 767px) {
   .col-md-4 {
-    margin-bottom: 8rem !important;
     display: flex;
     flex-direction: row;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 0;
+    
   }
   .page-footer {
     text-align: center;
@@ -184,19 +177,28 @@
 
   .footer-copyright {
     font-size: 14px;
+    margin-bottom: 0;
   }
-  .container-fluid {
+
+  /* .container-fluid {
     padding: 0;
-  }
+  } */
   .icon {
     margin: 0 auto;
     padding: 10px;
+  }
+  #logo{
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  #copyright{
+    margin-bottom: 0;
   }
 }
 
 @media (min-width: 768px) {
   #copyright {
-    padding-left: 35px;
+    /* padding-left: 35px; */
     padding-top: 45px;
   }
   #logo {
@@ -207,7 +209,7 @@
 
 @media (min-width: 820px) {
   #copyright {
-    padding-left: 35px;
+    /* padding-left: 35px; */
     padding-top: 30px;
   }
   #logo {
@@ -231,12 +233,12 @@
     padding-left: 100px;
   }
   #logo {
-    padding-left: 170px;
+    padding-left: 150px;
   }
 }
 @media (min-width: 376px) {
   #logo {
-    padding-left: 210px;
+    padding-left: 185px;
   }
 }
 
