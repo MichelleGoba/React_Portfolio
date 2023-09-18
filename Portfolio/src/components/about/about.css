@@ -423,6 +423,10 @@
     text-align: left;
     width: 100%;
   }
+  
+  .row .timeline .timeline-text {
+    text-align: left;
+  }
 
   /* .about-section{
     padding-top: 60px;
