@@ -155,7 +155,7 @@ const Contact = () => {
               {errors.message && <span style={{ color: "red" }}>{errors.message}</span>}
             </div>
 
-            <ReCAPTCHA
+            <ReCAPTCHA className="recaptcha"
               sitekey="6LfPb-MnAAAAAIcqD6LGgxKJ44a_Knfx-ZipmtSk"
               onChange={(val) => {
                 setGoogleCaptcha(val);

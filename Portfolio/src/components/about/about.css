@@ -381,6 +381,10 @@
   .content {
     width: 100%;
   }
+  .img-fluid{
+    align-items: center;
+    text-align: center;
+  }
   .profession {
     font-size: 20px;
   }
@@ -415,12 +419,32 @@
     flex: 0 0 100%;
     max-width: 100%;
   }
+  .content p{
+    text-align: left;
+    width: 100%;
+  }
 
   /* .about-section{
     padding-top: 60px;
   } */
+  .personal-info, .email, .city{
+    max-width: 100%;
+  }
 
+  .email p, .city p{
+    font-size: 14px;
+  }
   
+  .abt-buttons{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .hire-btn{
+    padding-left: 0;
+  }
+
   .profession{
     padding-top: 10px;
   }
@@ -433,6 +457,10 @@
 
   .skills-content {
     padding-left: 25px;
+  }
+  .skills-content p{
+    text-align: left;
+    width: 100%;
   }
   .title,
   .timeline-box {
@@ -447,3 +475,4 @@
     width: 100%; /* Make the timeline boxes take up 50% of the container */
   }
 }
+

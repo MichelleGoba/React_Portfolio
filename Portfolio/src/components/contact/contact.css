@@ -9,7 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 100px;
+  /* padding: 20px 100px; */
 }
 .contact-section .title {
   padding-top: 30px;
@@ -129,6 +129,7 @@ textarea {
 @media screen and (max-width: 880px) {
   .contact-box {
     grid-template-columns: 1fr;
+    width: 100%;
   }
   .left,
   .flip-box,
@@ -149,9 +150,13 @@ textarea {
 }
 @media (max-width:375px) {
   .contact-box {
-    /* grid-template-columns: 1fr; */
+    grid-template-columns: 1fr; 
+    width: 360px; 
+    align-items: center;
     
   }
+
+
   .left,
   .flip-box,
   .flip-box-front,
@@ -161,5 +166,22 @@ textarea {
     height: 350px;
     width: 100%;
   }
+
+  .contact-box .right, .contact-box .left{
+    width: 100%;
+  }
+
+  .contact-box .right .field{
+    width: 100%;
+  }
+
+  .contact-container{
+    width: 100%;
+  }
   
+  .recaptcha{
+    max-width: 100%;
+  }
 }
+
+
