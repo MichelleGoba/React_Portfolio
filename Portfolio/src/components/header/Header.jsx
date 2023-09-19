@@ -20,8 +20,8 @@ const Header = () => {
   return (
     <Navbar expand="xl" className="Navbar sticky-top" expanded={expanded}>
       <Container className="nav">
-        <img src={myLogo} className="logo" />
-        <Navbar.Brand href="#home" className="name">
+        <a href='home'><img src={myLogo} className="logo" /></a>    
+        <Navbar.Brand href="#home" className="name">  
           <span>M</span>ichelle
         </Navbar.Brand>
         <Navbar.Toggle
