@@ -61,6 +61,10 @@
   color: tomato;
 }
 
+Nav.Link{
+  text-align: center;
+}
+
 @media (max-width: 1199.98px){
   .navbar-expand-xl>.container, .navbar-expand-xl>.container-fluid, .navbar-expand-xl>.container-lg, .navbar-expand-xl>.container-md, .navbar-expand-xl>.container-sm, .navbar-expand-xl>.container-xl{
     padding-right: 0;
@@ -75,6 +79,10 @@
   }
   .navbar-toggler{
     margin-right: 25px;
+  }
+
+  .nav-link{
+    text-align: center;
   }
 }
     
