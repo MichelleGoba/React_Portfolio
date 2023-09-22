@@ -109,6 +109,7 @@ textarea {
   padding-top: 30px;
 }
 
+
 .button {
   padding: 10px;
   margin-top: 20px;
@@ -151,7 +152,8 @@ textarea {
 @media (max-width:375px) {
   .contact-box {
     grid-template-columns: 1fr; 
-    width: 360px; 
+    width: 100%;
+    /* width: 360px;  */
     align-items: center;
     
   }
@@ -164,14 +166,17 @@ textarea {
   .flip-box-inner,
   .cnt-img {
     height: 350px;
-    width: 100%;
+    width: 50%;
   }
 
   .contact-box .right, .contact-box .left{
     width: 100%;
   }
 
-  .contact-box .right .field{
+  .contact-box .right .input-field{
+    width: 100%;
+  }
+  .contact-box .right{
     width: 100%;
   }
 
@@ -182,6 +187,25 @@ textarea {
   .recaptcha{
     max-width: 100%;
   }
+  #contact > div > div > form > div:nth-child(2) > input{
+    font-size: 100%;
+  }
+  .flipImg-box-front, .flipImg-box-back{
+    width: 100%;
+  }
+  .flipImg-box-back p{
+    font-size: 14px;
+    text-align: center;
+  }
 }
 
+/* galaxy fold screen */
+@media (max-width:280px){
+  .field{
+    width: 70%;
+  }
+  .recaptcha{
+    width: 100%;
+  }
+}
 

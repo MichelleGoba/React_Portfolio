@@ -38,10 +38,13 @@
 .personal-info {
   padding-top: 10px;
 }
+
 .abt-buttons {
   padding-top: 10px;
   display: flex;
-}
+  gap: 10px;
+} 
+
 .btn {
   border-radius: 20px;
   color: #000;
@@ -54,9 +57,7 @@
   background-color: rgb(255, 136, 0);
 }
 
-.hire-btn {
-  padding-left: 20px;
-}
+
 /* About Me section end */
 
 /* Skills section start */
@@ -420,17 +421,18 @@
     max-width: 100%;
   }
   .content p{
-    text-align: left;
+    text-align: center;
     width: 100%;
+    font-size: 16px;
+    padding-left: 10px;
   }
   
   .row .timeline .timeline-text {
     text-align: left;
+    font-size: 14px;
   }
 
-  /* .about-section{
-    padding-top: 60px;
-  } */
+
   .personal-info, .email, .city{
     max-width: 100%;
   }
@@ -438,19 +440,24 @@
   .email p, .city p{
     font-size: 14px;
   }
+ 
   
   .abt-buttons{
-    width: 100%;
+    margin-right: 0px;
+    align-items: center;
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
+
   .hire-btn{
     padding-left: 0;
-  }
+  } 
 
   .profession{
     padding-top: 10px;
+    text-align: center;
+    font-size: 16px;
   }
 
   .about-image{
@@ -463,13 +470,18 @@
     padding-left: 25px;
   }
   .skills-content p{
-    text-align: left;
+    text-align: center;
     width: 100%;
+    font-size: 16px;
   }
   .title,
   .timeline-box {
     padding-left: 20px;
   }
+  .row .timeline .timeline-date, .row .timeline .timeline-title, h5{
+    font-size: 16px;
+  }
+
 }
 
 @media (min-width: 768px) {

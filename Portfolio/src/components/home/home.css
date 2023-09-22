@@ -83,19 +83,15 @@ body {
   display: flex;
   gap: 10px;
 }
-
 .home-button {
-  margin-top: 40px;
-  margin-left: 10px;
-  width: 160px;
-  padding: 10px;
-  border-radius: 20px;
-  background: rgba(255, 99, 71, 0.808);
-  text-align: center;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease 0s;
-  cursor: pointer;
-  outline: none;
+    padding: 10px;
+    margin-top: 30px;
+    margin-left: 10px;
+    border-radius: 20px;
+    color: #413a3a;
+    background-color: rgba(255, 99, 71, 0.808);
+    width: 160px;
+    border: none;
 }
 .home-button:hover {
   background-color: orange;
@@ -106,6 +102,7 @@ body {
 .home-button a {
   text-decoration: none;
   color: #272525;
+  padding: 20px;
 }
 
 /* social icons start */
@@ -220,13 +217,6 @@ body {
 
 
 
-/* media quiries */
-/* 
-@media (max-width: 767px){
-  .container-fluid {
-    padding: 10;
-}
-} */
 
 
 
@@ -235,23 +225,29 @@ body {
   .greeting {
     font-size: 30px;
     font-weight: 600;
+    text-align: center;
    
   }
   .my-name{
     font-size: 25px;
     font-weight: 600;
+    text-align: center;
   }
   .my-name span{
     font-size: 25px;
   }
   .my-profession {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
+    text-align: center;
   }
   .home-img {
     display: none;
-    /* height: 100%;
-    width: 100%; */
+    
+  }
+  .home-button{
+    margin-left: 25%;
+
   }
   .image-container {
     padding-top: 50px;
@@ -262,6 +258,9 @@ body {
   }
   .content {
     padding-left: 25px;
+  }
+  .social-icons{
+    margin-left: 10%;
   }
 }
 @media (min-width: 601px) {
@@ -274,7 +273,7 @@ body {
   }
 
   .image-container{
-    /* width:450px; */
+   
     height: 500px;
   }
   .home-img {
@@ -287,5 +286,13 @@ body {
 
   .content p {
     width: 100%;
+  }
+}
+@media (max-width:280px){
+  .social-icons{
+    margin-left: -15px;
+  }
+  .home-button{
+    margin-left: 40px;
   }
 }

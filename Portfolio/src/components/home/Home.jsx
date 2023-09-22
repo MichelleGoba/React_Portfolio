@@ -75,10 +75,11 @@ const Home = () => {
           {/* Social icons end */}
 
           {/* Home buton start */}
+         
 
           <div className="home-button">
             <a href="#contact">Contact Me</a>
-          </div>
+          </div> 
           {/* Home buton end */}
         </Col>
 

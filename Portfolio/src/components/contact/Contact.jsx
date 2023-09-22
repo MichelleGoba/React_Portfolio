@@ -106,7 +106,7 @@ const Contact = () => {
           
 
           <form ref={form} onSubmit={handleSubmit} className="right">
-            <div>
+            <div className="input-field">
               <input
                 type="text"
                 className="field"
@@ -155,6 +155,8 @@ const Contact = () => {
               {errors.message && <span style={{ color: "red" }}>{errors.message}</span>}
             </div>
 
+            <div className="recaptcha-box">
+
             <ReCAPTCHA className="recaptcha"
               sitekey="6LfPb-MnAAAAAIcqD6LGgxKJ44a_Knfx-ZipmtSk"
               onChange={(val) => {
@@ -162,11 +164,13 @@ const Contact = () => {
                 setRecaptchaValid(true);  //reset the validation when the reCaptcha changes
             }}
             /> 
+            </div>
                         {!recaptchaValid && (
               <span style={{ color: "red" }}>
                 Please verify that you are not a robot.
               </span>
             )}
+
 
 
             <button  type="submit" className="button">
