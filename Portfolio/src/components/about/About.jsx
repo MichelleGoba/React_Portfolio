@@ -71,7 +71,7 @@ const About = () => {
               development. <br />
               My skills include designing and developing features and
               functionalities of websites and applications using Balsamiq,
-              Figma, HTML, CSS, JavaScript, Node JS, React JS, and Python.{" "}
+              Figma, HTML, CSS, JavaScript, Node JS, and React JS.{" "}
               <br />I have experience coordinating with other developers,
               learning quickly, multitasking, meeting deadlines, and
               communicating promptly and clearly.
