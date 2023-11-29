@@ -19,7 +19,7 @@ const About = () => {
 
         {/* content column start */}
         <Col xs={12} md={6} h-100 w-100 className="content">
-          <h3 className="profession">Im a Junior Software Developer</h3>
+          <h3 className="profession">I'm a Junior Software Developer</h3>
           <p>
             I am a self-driven and highly motivated individual. Exceptionally good at handling pressure, picking up new concepts quickly, and effectively communicating ideas. I have been progressively exposed to theoretical and practical knowledge in Software Development, Environmental Health and Safety and Geographic Information Systems.
             As an individual that is always eager to learn, I am currently
